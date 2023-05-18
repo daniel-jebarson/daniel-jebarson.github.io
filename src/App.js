@@ -1,3 +1,11 @@
+import Layout from "./Layout/Layout";
+import Display from "./components/Display";
+import Slidebar from "./components/SlideBar";
 export default function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <Layout>
+      <Slidebar />
+      <Display />
+    </Layout>
+  );
 }
