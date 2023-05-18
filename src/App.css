@@ -54,6 +54,11 @@
   font-weight: 700;
 }
 
+.para {
+  font-family: Gilda_display, Arial, serif;
+  /* font-weight: 700; */
+}
+
 .back {
   background-color: #0f0f0f;
 }
