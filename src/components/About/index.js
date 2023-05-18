@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="h-screen bg-slate-200 flex flex-col text-center gap-5 text-black text-lg  font-normal"
+      className="h-screen bg-slate-500 flex flex-col text-center gap-5 text-black text-lg  font-normal"
     >
       <div className="head text-5xl mt-12 font-bold">About Me</div>
       <div className="flex flex-row mt-14 gap-6">
@@ -67,7 +67,7 @@ export default function About() {
             </tbody>
           </table>
           <button className="py-3 mt-7 mx-auto px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023]">
-            Contact Me
+            Download CV
             <DownloadIcon />
           </button>
         </div>
