@@ -6,7 +6,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 
 export default function Slidebar() {
   return (
-    <div className="flex-none w-1/4 bg-black h-screen min-w-[250px] fixed ">
+    <div className="flex-none  bg-black h-screen min-w-[25%] fixed">
       <div className="nav flex  text-white text-lg mt-10 flex-col align-middle justify-center text-center w-full gap-5">
         <div>
           <img
