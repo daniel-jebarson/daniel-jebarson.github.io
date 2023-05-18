@@ -1,31 +1,33 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Roboto_slab";
+  src: local("Roboto_slab"),
+    url(./fonts/Roboto_slab/RobotoSlab-Regular.ttf) format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Gilda_display";
+  src: local("Gilda_display"),
+    url(./fonts/Gilda_display/GildaDisplay-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto_slab";
+  font-weight: 900;
+  src: local("Roboto_slab"),
+    url(./fonts/Roboto_slab/RobotoSlab-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto_slab";
+  font-weight: 900;
+  src: local("Roboto_slab"),
+    url(./fonts/Roboto_slab/RobotoSlab-Black.ttf) format("truetype");
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +37,15 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.name {
+  font-family: Roboto_slab, "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.nav {
+  font-family: Gilda_display, Arial, serif;
+  font-weight: 700;
 }
