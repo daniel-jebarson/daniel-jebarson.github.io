@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.cf81f928.css",
+    "main.js": "/portfolio/static/js/main.640c518e.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/RobotoSlab-Black.ttf": "/portfolio/static/media/RobotoSlab-Black.b1eefbae7b352cda1c3a.ttf",
+    "static/media/RobotoSlab-Bold.ttf": "/portfolio/static/media/RobotoSlab-Bold.aea772dee2141c9b0792.ttf",
+    "static/media/RobotoSlab-Regular.ttf": "/portfolio/static/media/RobotoSlab-Regular.7ff9da9c484d15185b5b.ttf",
+    "static/media/Daniel Resume.pdf": "/portfolio/static/media/Daniel Resume.eb10b272363f2a60f730.pdf",
+    "static/media/GildaDisplay-Regular.ttf": "/portfolio/static/media/GildaDisplay-Regular.f712cdf2015640c8cc1e.ttf",
+    "static/media/MyImage.jpg": "/portfolio/static/media/MyImage.ab66301e99853ce3d083.jpg",
+    "static/media/gotosite.png": "/portfolio/static/media/gotosite.dc2459843a8d51a90e5d.png",
+    "static/media/github.png": "/portfolio/static/media/github.ed1c06d925fff0b57e32.png",
+    "index.html": "/portfolio/index.html",
+    "main.cf81f928.css.map": "/portfolio/static/css/main.cf81f928.css.map",
+    "main.640c518e.js.map": "/portfolio/static/js/main.640c518e.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf81f928.css",
+    "static/js/main.640c518e.js"
+  ]
+}
