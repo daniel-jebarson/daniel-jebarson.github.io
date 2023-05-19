@@ -1,4 +1,5 @@
 {
+  "homepage": "https://daniel-jebarson.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +11,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^5.0.0",
     "grapheme-splitter": "^1.0.4",
     "material-icons": "^1.13.6",
     "nodemailer": "^6.9.2",
@@ -22,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "dev": "serve -s build",
     "test": "react-scripts test",
