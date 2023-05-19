@@ -1,5 +1,5 @@
 {
-  "homepage": "https://daniel-jebarson.github.io/portfolio",
+  "homepage": "https://daniel-jebarson.github.io",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -24,8 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "build": "react-scripts build",
     "dev": "serve -s build",
     "test": "react-scripts test",
