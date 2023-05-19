@@ -3,8 +3,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import { useState } from "react";
 
 export default function Slidebar() {
+  const [select, setSelect] = useState(0);
   return (
     <div className="flex-none  bg-black h-screen min-w-[25%] fixed">
       <div className="nav flex  text-white text-lg mt-10 flex-col align-middle justify-center text-center w-full gap-5">
@@ -18,19 +20,44 @@ export default function Slidebar() {
             Daniel Jebarson K
           </h3>
         </div>
-        <p className="cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
+        <p
+          onClick={() => setSelect(0)}
+          className={`cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition ${
+            select === 0 ? "text-blue-600 " : ""
+          }`}
+        >
           <a href="/#">Home</a>
         </p>
-        <p className="cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
+        <p
+          onClick={() => setSelect(1)}
+          className={`cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition ${
+            select === 1 ? "text-blue-600 " : ""
+          }`}
+        >
           <a href="#about"> About Me</a>
         </p>
-        <p className="cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
+        <p
+          onClick={() => setSelect(2)}
+          className={`cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition ${
+            select === 2 ? "text-blue-600 " : ""
+          }`}
+        >
           <a href="#resume">Resume</a>
         </p>
-        <p className="cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
+        <p
+          onClick={() => setSelect(3)}
+          className={`cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition ${
+            select === 3 ? "text-blue-600 " : ""
+          }`}
+        >
           <a href="#projects">Projects</a>
         </p>
-        <p className="cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
+        <p
+          onClick={() => setSelect(4)}
+          className={`cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition ${
+            select === 4 ? "text-blue-600 " : ""
+          }`}
+        >
           <a href="#contact">Contact</a>
         </p>
       </div>
