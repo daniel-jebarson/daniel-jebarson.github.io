@@ -4,21 +4,21 @@ export default function About() {
   return (
     <div
       id="about"
-      className="h-screen bg-[#C0EEF2] flex flex-col text-center gap-5 text-black text-lg  font-normal"
+      className="h-screen bg-white flex flex-col text-center gap-5 text-black text-lg  font-normal"
     >
       <div className="head text-5xl mt-12 font-bold">About Me</div>
-      <div className="flex flex-row mt-14 gap-6">
+      <div className="flex flex-row mt-14 gap-6 ml-8">
         <div className="flex-col flex flex-auto w-64 gap-6">
-          <h3 className="text-3xl font-medium pt">
+          <h3 className="text-3xl font-medium">
             I'm <span className="text-yellow-600">Daniel Jebarson,</span> a Web
             Enthusiast
           </h3>
-          <p className="text-left ml-6 pt-5 leading-7 text-slate-900">
+          <p className="text-left pt-5 leading-7 text-slate-900">
             I love playing music, reading comics and playing games. I am
             currently pursuing BTech degree in VIT Vellore.I am 20 years old.I
             love exploring new technologies.
           </p>
-          <p className="text-left ml-6 leading-7 text-slate-900">
+          <p className="text-left leading-7 text-slate-900">
             I am currently looking for jobs. I am also a discord bot developer.
             I worked on reactJs, NextJs, TypeScript, Java and many more. I am
             also looking to collaborate in open-source projects.
@@ -26,7 +26,7 @@ export default function About() {
         </div>
 
         <div class="relative flex-auto w-32   sm:rounded-lg pt-14 pl-4">
-          <table class=" text-sm text-left w-fit shadow-md text-white">
+          <table class=" text-sm text-left w-fit shadow-md text-white bg-red-400">
             <tbody>
               <tr class="bg-gray-600 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <th

@@ -50,7 +50,7 @@ export default function work({ title, desc, tags, link, code, img }) {
           {tags.map((tag) => (
             <p
               key={tag.name}
-              className={`font-medium text-${tag.color} p-1 bg-slate-800`}
+              className={`font-medium text-${tag.color} py-0.5 px-1 bg-slate-800 rounded-sm shadow`}
             >
               {tag.name}
             </p>

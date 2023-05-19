@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  safelist: [
+    {
+      pattern: /text-*/, // the "." means "everything"
+    },
+  ],
   theme: {
     extend: {
       colors: {
