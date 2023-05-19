@@ -84,7 +84,7 @@ export default function Contact() {
             </table>
           </div>
           <div>
-            <div className="text-center text-3xl font-bold">Follow Me</div>
+            <div className="text-center mt-5 text-3xl font-bold">Follow Me</div>
             <div className="text-white flex flex-row gap-7 w-fit mx-auto pt-7">
               <div
                 onClick={() =>

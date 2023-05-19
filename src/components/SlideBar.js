@@ -19,7 +19,7 @@ export default function Slidebar() {
           </h3>
         </div>
         <p className="cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
-          <a href="#">Home</a>
+          <a href="/#">Home</a>
         </p>
         <p className="cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
           <a href="#about"> About Me</a>
