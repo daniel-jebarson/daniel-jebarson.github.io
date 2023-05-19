@@ -66,9 +66,14 @@ export default function About() {
               </tr>
             </tbody>
           </table>
-          <button className="py-3 mt-7 mx-auto px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023]">
-            Download CV
-            <DownloadIcon />
+          <button className="py-3 mt-7 mx-auto px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800">
+            <a
+              href={require("../../assets/files/Daniel Resume.pdf")}
+              download={"Dani'sResume"}
+            >
+              Download CV
+              <DownloadIcon />
+            </a>
           </button>
         </div>
       </div>

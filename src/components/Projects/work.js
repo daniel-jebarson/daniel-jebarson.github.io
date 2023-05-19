@@ -23,7 +23,7 @@ export default function work({ title, desc, tags, link, code, img }) {
                 className="bg-slate-800 w-9 h-9 rounded-full border-[1px] border-secondary flex items-center justify-center cursor-pointer mr-2"
               >
                 <img
-                  src={require("../../assets/gotosite.png")}
+                  src={require("../../assets/images/gotosite.png")}
                   alt={"gotosite"}
                   className="w-4/5 h-4/5 object-contain"
                 />
@@ -33,7 +33,7 @@ export default function work({ title, desc, tags, link, code, img }) {
                 className="bg-slate-800 w-9 h-9 rounded-full border-[1px] border-secondary flex items-center justify-center cursor-pointer "
               >
                 <img
-                  src={require("../../assets/github.png")}
+                  src={require("../../assets/images/github.png")}
                   alt={"github"}
                   className="w-4/5 h-4/5 object-contain"
                 />

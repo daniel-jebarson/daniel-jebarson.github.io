@@ -10,7 +10,10 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 
 export default function Contact() {
   return (
-    <div className="flex text-center flex-col gap-12 mt-10 min-h-screen">
+    <div
+      id="contact"
+      className="flex text-center flex-col gap-12 mt-10 min-h-screen"
+    >
       <div className="text-5xl font-bold">Contact</div>
       <div className="flex flex-row  ">
         <div className="flex-auto  w-32 pl-10">
@@ -83,10 +86,45 @@ export default function Contact() {
           <div>
             <div className="text-center text-3xl font-bold">Follow Me</div>
             <div className="text-white flex flex-row gap-7 w-fit mx-auto pt-7">
-              <GitHubIcon className="cursor-pointer hover:scale-105" />
-              <InstagramIcon className="cursor-pointer hover:scale-105" />
-              <LinkedInIcon className="cursor-pointer hover:scale-105" />
-              <FacebookIcon className="cursor-pointer hover:scale-105" />
+              <div
+                onClick={() =>
+                  window.open("https://github.com/daniel-jebarson", "_blank")
+                }
+              >
+                <GitHubIcon className="cursor-pointer hover:scale-105" />
+              </div>
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://www.instagram.com/daniel_diago2003",
+                    "_blank"
+                  )
+                }
+              >
+                {" "}
+                <InstagramIcon className="cursor-pointer hover:scale-105" />
+              </div>
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/daniel-jebarson-k-a727a822a",
+                    "_blank"
+                  )
+                }
+              >
+                {" "}
+                <LinkedInIcon className="cursor-pointer hover:scale-105" />
+              </div>
+              <div
+                onClick={() =>
+                  window.open(
+                    "https://www.facebook.com/daniel.jebarson.9",
+                    "_blank"
+                  )
+                }
+              >
+                <FacebookIcon className="cursor-pointer hover:scale-105" />
+              </div>{" "}
             </div>
           </div>
         </div>

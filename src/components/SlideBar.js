@@ -10,7 +10,7 @@ export default function Slidebar() {
       <div className="nav flex  text-white text-lg mt-10 flex-col align-middle justify-center text-center w-full gap-5">
         <div>
           <img
-            src={require("../assets/MyImage.jpg")}
+            src={require("../assets/images/MyImage.jpg")}
             alt="Daniel Jebarson"
             className="rounded-full border-solid cursor-pointer  border-[8px] border-stone-600 min-h-fit mx-auto  max-w-[190px]"
           />
@@ -18,27 +18,56 @@ export default function Slidebar() {
             Daniel Jebarson K
           </h3>
         </div>
-        <p className="cursor-pointer hover:text-violet-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
-          Home
+        <p className="cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
+          <a href="#">Home</a>
         </p>
-        <p className="cursor-pointer hover:text-violet-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
-          About Me
+        <p className="cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
+          <a href="#about"> About Me</a>
         </p>
-        <p className="cursor-pointer hover:text-violet-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
-          Resume
+        <p className="cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
+          <a href="#resume">Resume</a>
         </p>
-        <p className="cursor-pointer hover:text-violet-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
-          Projects
+        <p className="cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
+          <a href="#projects">Projects</a>
         </p>
-        <p className="cursor-pointer hover:text-violet-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
-          Contact
+        <p className="cursor-pointer hover:text-blue-600 hover:-translate-y-0.5 hover:text-xl transition hover:transition">
+          <a href="#contact">Contact</a>
         </p>
       </div>
       <div className="text-white flex flex-row gap-5 w-fit mx-auto pt-7">
-        <GitHubIcon className="cursor-pointer hover:scale-105" />
-        <InstagramIcon className="cursor-pointer hover:scale-105" />
-        <LinkedInIcon className="cursor-pointer hover:scale-105" />
-        <FacebookIcon className="cursor-pointer hover:scale-105" />
+        <div
+          onClick={() =>
+            window.open("https://github.com/daniel-jebarson", "_blank")
+          }
+        >
+          <GitHubIcon className="cursor-pointer hover:scale-105" />
+        </div>
+        <div
+          onClick={() =>
+            window.open("https://www.instagram.com/daniel_diago2003", "_blank")
+          }
+        >
+          {" "}
+          <InstagramIcon className="cursor-pointer hover:scale-105" />
+        </div>
+        <div
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/daniel-jebarson-k-a727a822a",
+              "_blank"
+            )
+          }
+        >
+          {" "}
+          <LinkedInIcon className="cursor-pointer hover:scale-105" />
+        </div>
+        <div
+          onClick={() =>
+            window.open("https://www.facebook.com/daniel.jebarson.9", "_blank")
+          }
+        >
+          <FacebookIcon className="cursor-pointer hover:scale-105" />
+        </div>
       </div>
     </div>
   );
