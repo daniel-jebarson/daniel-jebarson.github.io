@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="h-screen bg-slate-500 flex flex-col text-center gap-5 text-black text-lg  font-normal"
+      className="h-screen bg-[#C0EEF2] flex flex-col text-center gap-5 text-black text-lg  font-normal"
     >
       <div className="head text-5xl mt-12 font-bold">About Me</div>
       <div className="flex flex-row mt-14 gap-6">
