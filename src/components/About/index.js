@@ -1,5 +1,7 @@
 import "../../App.css";
 import DownloadIcon from "@mui/icons-material/Download";
+import CodingCLipArt from "../../assets/images/coding-svg-clipart.svg";
+import LearningCode from "../../assets/images/learn-coding-clipart.svg";
 export default function About() {
   return (
     <div
@@ -7,8 +9,8 @@ export default function About() {
       className="h-screen bg-white flex flex-col text-center gap-5 text-black text-lg  font-normal"
     >
       <div className="head text-5xl mt-12 font-bold">About Me</div>
-      <div className="flex flex-row mt-14 gap-6 ml-8">
-        <div className="flex-col flex flex-auto w-64 gap-6">
+      <div className="flex flex-row  gap-6 ml-8">
+        <div className="flex-col mt-14 flex flex-auto w-64 gap-6">
           <h3 className="text-3xl font-medium">
             I'm <span className="text-yellow-600">Daniel Jebarson,</span> a Web
             Enthusiast
@@ -25,48 +27,9 @@ export default function About() {
           </p>
         </div>
 
-        <div class="relative flex-auto w-32   sm:rounded-lg pt-14 pl-4">
-          <table class=" text-sm text-left w-fit shadow-md text-white bg-red-400">
-            <tbody>
-              <tr class="bg-gray-600 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th
-                  scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Name :
-                </th>
-                <td class="px-6 py-4">Daniel Jebarson K</td>
-              </tr>
-              <tr class="bg-gray-600 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th
-                  scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Age :
-                </th>
-                <td class="px-6 py-4">20</td>
-              </tr>
-              <tr class="bg-gray-600 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th
-                  scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  Email :
-                </th>
-                <td class="px-6 py-4">danieljebarson21@gmail.com</td>
-              </tr>
-              <tr class="bg-gray-600  hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th
-                  scope="row"
-                  class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  From :
-                </th>
-                <td class="px-6 py-4">Nazareth, TamilNadu</td>
-              </tr>
-            </tbody>
-          </table>
-          <button className="py-3 mt-7 mx-auto px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800">
+        <div class="relative flex-auto w-32   sm:rounded-lg  pl-4">
+          <img src={LearningCode} />
+          <button className="py-3 text-white mt-7 mx-auto px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800">
             <a
               href={require("../../assets/files/Daniel Resume.pdf")}
               download={"Dani'sResume.pdf"}
