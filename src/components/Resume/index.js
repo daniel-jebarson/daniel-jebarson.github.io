@@ -8,10 +8,7 @@ export default function Resume() {
         Resume
       </div>
       <div className="grid grid-cols-2 gap-7 mt-7">
-        <ol
-          class="relative border-l border-gray-200 dark:border-gray-700 ml-9 mb-6"
-          data-aos="slide-up"
-        >
+        <ol class="relative border-l border-gray-200 dark:border-gray-700 ml-9 mb-6">
           <li class="mb-10" data-aos="zoom-in">
             <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
               <svg
@@ -44,7 +41,7 @@ export default function Resume() {
               architecture, pricing, and support.
             </p>
           </li>
-          <li class="mb-10" data-aos="zoom-out">
+          <li class="mb-10" data-aos="zoom-out" data-aos-delay="700">
             <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
               <svg
                 aria-hidden="true"
@@ -92,7 +89,7 @@ export default function Resume() {
               Download Certificate
             </a>
           </li>
-          <li data-aos="zoom-in" data-aos-offset={"-15"}>
+          <li data-aos="zoom-in" data-aos-offset={"-15"} data-aos-delay="1300">
             <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
               <svg
                 aria-hidden="true"
