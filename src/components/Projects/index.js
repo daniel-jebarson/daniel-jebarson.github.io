@@ -20,7 +20,7 @@ export default function Projects() {
               key={ind}
               data-aos={"zoom-in-up"}
               data-aos-offset="-5"
-              data-aos-delay={ind % 2 == 0 ? "0" : "700"}
+              data-aos-delay={ind % 2 === 0 ? "0" : "700"}
               data-aos-duration="2000"
             >
               <Work

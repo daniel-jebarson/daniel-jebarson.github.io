@@ -1,16 +1,8 @@
 import "../../App.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import DownloadIcon from "@mui/icons-material/Download";
-// import CodingCLipArt from "../../assets/images/coding-svg-clipart.svg";
 import LearningCode from "../../assets/images/learn-coding-clipart.svg";
-import { useEffect } from "react";
 
 export default function About() {
-  const options = { duration: 2000 };
-  useEffect(() => {
-    Aos.init(options);
-  }, []);
   return (
     <div
       id="about"
