@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.e471290e.css",
-    "main.js": "/static/js/main.1219f7ef.js",
+    "main.css": "/static/css/main.a4ebb70a.css",
+    "main.js": "/static/js/main.bf23d620.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/RobotoSlab-Black.ttf": "/static/media/RobotoSlab-Black.b1eefbae7b352cda1c3a.ttf",
     "static/media/RobotoSlab-Bold.ttf": "/static/media/RobotoSlab-Bold.aea772dee2141c9b0792.ttf",
     "static/media/RobotoSlab-Regular.ttf": "/static/media/RobotoSlab-Regular.7ff9da9c484d15185b5b.ttf",
     "static/media/Daniel Resume.pdf": "/static/media/Daniel Resume.eb10b272363f2a60f730.pdf",
     "static/media/GildaDisplay-Regular.ttf": "/static/media/GildaDisplay-Regular.f712cdf2015640c8cc1e.ttf",
-    "static/media/MyImage.jpg": "/static/media/MyImage.ab66301e99853ce3d083.jpg",
-    "static/media/gotosite.png": "/static/media/gotosite.dc2459843a8d51a90e5d.png",
+    "static/media/MyImage.webp": "/static/media/MyImage.ab66301e99853ce3d083.webp",
+    "static/media/gotosite.webp": "/static/media/gotosite.dc2459843a8d51a90e5d.webp",
     "static/media/learn-coding-clipart.svg": "/static/media/learn-coding-clipart.eda1b469c5c19f0671f8e579d725c0e2.svg",
-    "static/media/github.png": "/static/media/github.ed1c06d925fff0b57e32.png",
+    "static/media/github.webp": "/static/media/github.ed1c06d925fff0b57e32.webp",
     "index.html": "/index.html",
-    "main.e471290e.css.map": "/static/css/main.e471290e.css.map",
-    "main.1219f7ef.js.map": "/static/js/main.1219f7ef.js.map",
+    "main.a4ebb70a.css.map": "/static/css/main.a4ebb70a.css.map",
+    "main.bf23d620.js.map": "/static/js/main.bf23d620.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e471290e.css",
-    "static/js/main.1219f7ef.js"
+    "static/css/main.a4ebb70a.css",
+    "static/js/main.bf23d620.js"
   ]
 }
