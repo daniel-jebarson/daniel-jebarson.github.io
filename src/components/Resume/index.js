@@ -4,10 +4,15 @@ import DownloadIcon from "@mui/icons-material/Download";
 export default function Resume() {
   return (
     <div id="resume" className="min-h-screen flex-col text-center">
-      <div className="text-5xl font-bold py-8">Resume</div>
+      <div className="text-5xl font-bold py-8" data-aos={"slide-down"}>
+        Resume
+      </div>
       <div className="grid grid-cols-2 gap-7 mt-7">
-        <ol class="relative border-l border-gray-200 dark:border-gray-700 ml-9 mb-6">
-          <li class="mb-10 ml-6">
+        <ol
+          class="relative border-l border-gray-200 dark:border-gray-700 ml-9 mb-6"
+          data-aos="slide-up"
+        >
+          <li class="mb-10" data-aos="zoom-in">
             <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
               <svg
                 aria-hidden="true"
@@ -39,7 +44,7 @@ export default function Resume() {
               architecture, pricing, and support.
             </p>
           </li>
-          <li class="mb-10 ml-6">
+          <li class="mb-10" data-aos="zoom-out">
             <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
               <svg
                 aria-hidden="true"
@@ -87,7 +92,7 @@ export default function Resume() {
               Download Certificate
             </a>
           </li>
-          <li class="ml-6">
+          <li data-aos="zoom-in" data-aos-offset={"-15"}>
             <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
               <svg
                 aria-hidden="true"
@@ -139,7 +144,7 @@ export default function Resume() {
           </li>
         </ol>
 
-        <div className="flex flex-col text-center">
+        <div className="flex flex-col text-center" data-aos="slide-up">
           <div className="text-3xl font-bold py-3">My Skills</div>
           <div className="ml-16 flex flex-col gap-8 mt-6">
             <BarGraph name={"JavaScript"} percent={65} />

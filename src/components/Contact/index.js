@@ -70,12 +70,14 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex text-center flex-col gap-12 mt-10 min-h-screen"
+      className="flex text-center flex-col gap-12 mt-10 min-h-screen overflow-hidden"
     >
-      <div className="text-5xl font-bold">Contact</div>
+      <div className="text-5xl font-bold" data-aos={"fade"}>
+        Contact
+      </div>
       <div className="flex flex-row  ">
-        <div className="flex-auto  w-32 pl-10">
-          <form onSubmit={handleSubmit}>
+        <div className="flex-auto  w-32 pl-10 overflow-hidden">
+          <form onSubmit={handleSubmit} data-aos={"slide-up"}>
             <label class="block mb-2 text-2xl font-semibold mt-3  text-white ">
               Get in Touch
             </label>
@@ -139,7 +141,11 @@ export default function Contact() {
           </form>
         </div>
         <div className="flex-auto w-80  flex flex-col text-left justify-center   gap-7">
-          <div class="max-w-sm p-6  border rounded-lg shadow bg-gray-800 mx-auto border-gray-700 hover:border-gray-600 ">
+          <div
+            class="max-w-sm p-6  border rounded-lg shadow bg-gray-800 mx-auto border-gray-700 hover:border-gray-600 "
+            data-aos={"fade-in"}
+            data-aos-delay={600}
+          >
             <div className="flex flex-col ">
               <h1 className=" text-2xl mt-3 mb-4 font-bold">Address</h1>{" "}
               <p>6A Market Street,</p>
@@ -162,7 +168,7 @@ export default function Contact() {
               </tr>
             </table>
           </div>
-          <div>
+          <div data-aos={"slide-up"}>
             <div className="text-center mt-5 text-3xl font-bold">Follow Me</div>
             <div className="text-white flex flex-row gap-7 w-fit mx-auto pt-7">
               <div

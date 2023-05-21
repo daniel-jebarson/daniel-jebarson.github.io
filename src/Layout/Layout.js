@@ -4,7 +4,9 @@ class Layout extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="flex flex-row">{this.props.children}</div>
+        <div className="flex flex-row overflow-hidden">
+          {this.props.children}
+        </div>
       </React.Fragment>
     );
   }

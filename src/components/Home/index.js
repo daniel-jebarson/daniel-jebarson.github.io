@@ -9,10 +9,13 @@ export default function Home() {
   };
   return (
     <div className="h-screen grid grid-cols-1 gap-7 name content-center text-center">
-      <h1 className="head text-5xl font-semibold tracking-[3px] pb-2 ">
+      <h1
+        className="head text-5xl font-semibold tracking-[3px] pb-2 "
+        data-aos="zoom-in-up"
+      >
         Welcome
       </h1>
-      <div className="text-4xl text-yellow-500 pb-16">
+      <div className="text-4xl text-yellow-500 pb-16" data-aos="zoom-in">
         {" "}
         <Typewriter
           options={{
@@ -30,10 +33,17 @@ export default function Home() {
           }}
         />
       </div>
-      <button className="py-2 mx-auto px-7 bg-transparent border-2 w-fit border-blue-500 rounded-sm  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800">
+      <button
+        className="py-2 mx-auto px-7 bg-transparent border-2 w-fit border-blue-500 rounded-sm  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800"
+        data-aos="zoom-out-up"
+      >
         <a href="#contact">Contact Me</a>
       </button>
-      <div className=" cursor-pointer w-fit left-[62%] absolute bottom-16">
+      <div
+        className=" cursor-pointer w-fit left-[62%] absolute bottom-16"
+        data-aos="slide-up"
+        data-aos-offset="20"
+      >
         <a href="#about" className="dark:text-slate-400">
           <svg
             width="24"
