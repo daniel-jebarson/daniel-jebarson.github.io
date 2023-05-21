@@ -12,7 +12,7 @@ export default function Slidebar() {
       <div className="nav flex  text-white text-lg mt-10 flex-col align-middle justify-center text-center w-full gap-5 overflow-hidden">
         <div data-aos="slide-down">
           <img
-            src={require("../assets/images/MyImage.jpg")}
+            src={require("../assets/images/MyImage.webp")}
             alt="Daniel Jebarson"
             className="rounded-full border-solid cursor-pointer  border-[8px] border-stone-600 min-h-fit mx-auto  max-w-[190px]"
           />
