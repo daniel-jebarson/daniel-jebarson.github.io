@@ -18,7 +18,7 @@ export default function About() {
             Enthusiast
           </h3>
           <p
-            className="text-left pt-5 leading-7 text-slate-900"
+            className="pt-5 leading-7 text-slate-900 text-justify"
             data-aos={"fade-left"}
           >
             I love playing music, reading comics and playing games. I am
@@ -26,7 +26,7 @@ export default function About() {
             love exploring new technologies.
           </p>
           <p
-            className="text-left leading-7 text-slate-900"
+            className="text-justify leading-7 text-slate-900"
             data-aos={"fade-right"}
           >
             I am currently looking for jobs. I am also a discord bot developer.
