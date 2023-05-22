@@ -8,12 +8,12 @@ export default function Resume() {
         Resume
       </div>
       <div className="grid grid-cols-2 gap-7 mt-7">
-        <ol class="relative border-l border-gray-200 dark:border-gray-700 ml-9 mb-6">
+        <ol class="relative border-l  border-gray-700 ml-9 mb-6">
           <li class="mb-10" data-aos="zoom-in">
-            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+            <span class="absolute flex items-center justify-center w-6 h-6  rounded-full -left-3 ring-8  ring-gray-900 bg-blue-900">
               <svg
                 aria-hidden="true"
-                class="w-3 h-3 text-blue-800 dark:text-blue-300"
+                class="w-3 h-3  text-blue-300"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -25,16 +25,16 @@ export default function Resume() {
                 ></path>
               </svg>
             </span>
-            <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white ml-20">
+            <h3 class="flex items-center mb-1 text-lg font-semibold  text-white ml-20">
               AWS Practioner
-              <span class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 ml-3">
+              <span class="text-sm font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-900 text-blue-300 ml-3">
                 Ongoing
               </span>
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time class="block mb-2 text-sm font-normal leading-none  text-gray-500">
               Completed on {new Date().toLocaleDateString()}
             </time>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            <p class="mb-4 text-base font-normal  text-gray-400">
               Provides overall understanding of cloud computing concepts,
               independent of specific technical roles. It provides a detailed
               overview of cloud concepts, AWS core services, security,
@@ -42,10 +42,10 @@ export default function Resume() {
             </p>
           </li>
           <li class="mb-10" data-aos="zoom-out" data-aos-delay="700">
-            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+            <span class="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-8 ring-gray-900 bg-blue-900">
               <svg
                 aria-hidden="true"
-                class="w-3 h-3 text-blue-800 dark:text-blue-300"
+                class="w-3 h-3 text-blue-300"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,13 +57,13 @@ export default function Resume() {
                 ></path>
               </svg>
             </span>
-            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+            <h3 class="mb-1 text-lg font-semibold text-white">
               BackEnd Development and Apis
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-500">
               Completed on May 28th, 2022
             </time>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+            <p class="text-base font-normal text-gray-400">
               Learned how to write back end apps with Node.js and npm. I also
               built web applications with the Express framework, and build some
               mini-projects
@@ -72,7 +72,7 @@ export default function Resume() {
               href="https://www.freecodecamp.org/certification/Daniel_Jebarson/back-end-development-and-apis"
               target="_blank"
               rel="noreferrer"
-              class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+              class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border rounded-lg  focus:z-10 focus:ring-4 focus:outline-none focus:text-blue-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
             >
               <svg
                 class="w-4 h-4 mr-2"
@@ -90,10 +90,10 @@ export default function Resume() {
             </a>
           </li>
           <li data-aos="zoom-in" data-aos-offset={"-15"} data-aos-delay="1300">
-            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+            <span class="absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-8 ring-gray-900 bg-blue-900">
               <svg
                 aria-hidden="true"
-                class="w-3 h-3 text-blue-800 dark:text-blue-300"
+                class="w-3 h-3 text-blue-300"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -105,13 +105,13 @@ export default function Resume() {
                 ></path>
               </svg>
             </span>
-            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
+            <h3 class="mb-1 text-lg font-semibold text-white">
               Frontend Development Libraries
             </h3>
-            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time class="block mb-2 text-sm font-normal leading-none text-gray-500">
               Completed on December 9, 2022
             </time>
-            <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+            <p class="text-base font-normal text-gray-400">
               Learns how to style your site quickly with Bootstrap. I also learn
               how to add logic to your CSS styles and extend them with Sass.
               Later, I also built a shopping cart and other applications to
@@ -122,7 +122,7 @@ export default function Resume() {
               target="_blank"
               rel="noreferrer"
               href="https://www.freecodecamp.org/certification/Daniel_Jebarson/front-end-development-libraries"
-              class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+              class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium border rounded-lg focus:z-10 focus:ring-4 focus:outline-none focus:text-blue-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
             >
               <svg
                 class="w-4 h-4 mr-2"
@@ -155,7 +155,7 @@ export default function Resume() {
           <a
             href={require("../../assets/files/Daniel Resume.pdf")}
             download={"Dani's Resume"}
-            class="inline-flex items-center px-6 py-2 mt-16 mx-auto w-fit text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+            class="inline-flex items-center px-6 py-2 mt-16 mx-auto w-fit text-sm font-medium border rounded-lg  focus:z-10 focus:ring-4 focus:outline-none focus:text-blue-700 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700 focus:ring-gray-700"
           >
             Download CV <DownloadIcon />
           </a>

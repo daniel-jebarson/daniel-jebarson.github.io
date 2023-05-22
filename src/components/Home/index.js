@@ -50,7 +50,7 @@ export default function Home() {
         data-aos-offset="20"
         data-aos-delay="2000"
       >
-        <a href="#about" className="dark:text-slate-400">
+        <a href="#about" className="text-slate-400">
           <svg
             width="24"
             height="24"
