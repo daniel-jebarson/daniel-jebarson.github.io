@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4ebb70a.css",
-    "main.js": "/static/js/main.bf23d620.js",
+    "main.css": "/static/css/main.04ecd2ca.css",
+    "main.js": "/static/js/main.79d3c698.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/RobotoSlab-Black.ttf": "/static/media/RobotoSlab-Black.b1eefbae7b352cda1c3a.ttf",
     "static/media/RobotoSlab-Bold.ttf": "/static/media/RobotoSlab-Bold.aea772dee2141c9b0792.ttf",
@@ -13,12 +13,12 @@
     "static/media/learn-coding-clipart.svg": "/static/media/learn-coding-clipart.eda1b469c5c19f0671f8e579d725c0e2.svg",
     "static/media/github.webp": "/static/media/github.ed1c06d925fff0b57e32.webp",
     "index.html": "/index.html",
-    "main.a4ebb70a.css.map": "/static/css/main.a4ebb70a.css.map",
-    "main.bf23d620.js.map": "/static/js/main.bf23d620.js.map",
+    "main.04ecd2ca.css.map": "/static/css/main.04ecd2ca.css.map",
+    "main.79d3c698.js.map": "/static/js/main.79d3c698.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4ebb70a.css",
-    "static/js/main.bf23d620.js"
+    "static/css/main.04ecd2ca.css",
+    "static/js/main.79d3c698.js"
   ]
 }
