@@ -20,10 +20,10 @@ module.exports = {
             transform: "scale(1.015)",
           },
           "66.66%": {
-            transform: "scale(1.025)",
+            transform: "scale(1.030)",
           },
           "100%": {
-            transform: "scale(1.035)",
+            transform: "scale(1.045)",
           },
         },
       },
