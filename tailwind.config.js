@@ -8,6 +8,25 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        zoomy: "3s linear 100ms infinite alternate zoomy",
+      },
+      keyframes: {
+        zoomy: {
+          "0%": {
+            transform: "scale(1)",
+          },
+          "33.33%": {
+            transform: "scale(1.015)",
+          },
+          "66.66%": {
+            transform: "scale(1.025)",
+          },
+          "100%": {
+            transform: "scale(1.035)",
+          },
+        },
+      },
       colors: {
         primary: "#adbfd0",
         secondary: "#90a1b0",
