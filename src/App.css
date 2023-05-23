@@ -62,3 +62,14 @@
 .back {
   background-color: #0f0f0f;
 }
+
+.cursor {
+  position: fixed;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: white;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
