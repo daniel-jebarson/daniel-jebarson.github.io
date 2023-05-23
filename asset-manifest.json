@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.9dd40c05.css",
-    "main.js": "/static/js/main.977f4925.js",
+    "main.css": "/static/css/main.58949f95.css",
+    "main.js": "/static/js/main.295305ff.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/mixkit-fast-double-click-on-mouse-275.mp3": "/static/media/mixkit-fast-double-click-on-mouse-275.e758e4b03a23060754fe.mp3",
     "static/media/RobotoSlab-Black.ttf": "/static/media/RobotoSlab-Black.b1eefbae7b352cda1c3a.ttf",
     "static/media/RobotoSlab-Bold.ttf": "/static/media/RobotoSlab-Bold.aea772dee2141c9b0792.ttf",
     "static/media/RobotoSlab-Regular.ttf": "/static/media/RobotoSlab-Regular.7ff9da9c484d15185b5b.ttf",
@@ -13,12 +14,12 @@
     "static/media/learn-coding-clipart.svg": "/static/media/learn-coding-clipart.eda1b469c5c19f0671f8e579d725c0e2.svg",
     "static/media/github.webp": "/static/media/github.ed1c06d925fff0b57e32.webp",
     "index.html": "/index.html",
-    "main.9dd40c05.css.map": "/static/css/main.9dd40c05.css.map",
-    "main.977f4925.js.map": "/static/js/main.977f4925.js.map",
+    "main.58949f95.css.map": "/static/css/main.58949f95.css.map",
+    "main.295305ff.js.map": "/static/js/main.295305ff.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dd40c05.css",
-    "static/js/main.977f4925.js"
+    "static/css/main.58949f95.css",
+    "static/js/main.295305ff.js"
   ]
 }
