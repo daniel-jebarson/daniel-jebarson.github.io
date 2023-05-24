@@ -3,6 +3,14 @@ import DownloadIcon from "@mui/icons-material/Download";
 import LearningCode from "../../assets/images/learn-coding-clipart.svg";
 
 export default function About() {
+  const getDate = () => {
+    var dob = new Date("01/21/2003");
+    var month_diff = Date.now() - dob.getTime();
+    var age_dt = new Date(month_diff);
+    var year = age_dt.getUTCFullYear();
+    var age = Math.abs(year - 1970);
+    return age;
+  };
   return (
     <div
       id="about"
@@ -22,8 +30,8 @@ export default function About() {
             data-aos={"fade-left"}
           >
             I love playing music, reading comics and playing games. I am
-            currently pursuing BTech degree in VIT Vellore.I am 20 years old.I
-            love exploring new technologies.
+            currently pursuing BTech degree in VIT Vellore.I am {getDate()}{" "}
+            years old.I love exploring new technologies.
           </p>
           <p
             className="text-justify leading-7 text-slate-900"
