@@ -25,12 +25,12 @@ export default function Resume() {
                 ></path>
               </svg>
             </span>
-            <h3 class="flex items-center mb-1 text-lg font-semibold  text-white ml-20">
+            <h3 class="flex items-center mb-1 text-lg font-semibold  text-white ml-28">
               AWS Cloud Practioner
-              <time class="block pl-3 text-sm font-normal leading-none  text-gray-500">
-                Completed on 7/7/23
-              </time>
             </h3>
+            <time class="block pt-1 pb-3  text-sm font-normal leading-none  text-gray-500">
+              Completed on July 7th, 2023
+            </time>
             <p class="mb-4 text-base font-normal  text-gray-400">
               Provides overall understanding of cloud computing concepts,
               independent of specific technical roles. It provides a detailed
