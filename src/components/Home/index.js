@@ -8,7 +8,7 @@ export default function Home() {
     return splitter.splitGraphemes(string);
   };
   return (
-    <div className="h-screen grid grid-cols-1 gap-7 name content-center text-center">
+    <div className="min-h-screen grid grid-cols-1 gap-7 name content-center text-center">
       <h1
         className="head text-5xl font-semibold tracking-[3px] pb-2 "
         data-aos="zoom-in-up"

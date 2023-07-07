@@ -14,7 +14,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="h-screen bg-white flex flex-col text-center gap-5 text-black text-lg  font-normal"
+      className="min-h-screen bg-white flex flex-col text-center gap-5 text-black text-lg  font-normal"
     >
       <div className="head text-5xl mt-12 font-bold" data-aos={"slide-down"}>
         About Me
@@ -30,7 +30,7 @@ export default function About() {
             data-aos={"fade-left"}
           >
             I love playing music, reading comics and playing games. I am
-            currently pursuing BTech degree in VIT Vellore.I am {getDate()}{" "}
+            currently pursuing BTech degree in VIT Vellore. I am {getDate()}{" "}
             years old.I love exploring new technologies.
           </p>
           <p
