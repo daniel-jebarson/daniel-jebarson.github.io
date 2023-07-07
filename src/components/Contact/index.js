@@ -7,6 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import CopyrightIcon from "@mui/icons-material/Copyright";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -209,7 +210,7 @@ export default function Contact() {
               </tr>
             </table>
           </div>
-          <div data-aos={"slide-up"}>
+          <div data-aos={"slide-up"} className="text-center">
             <div className="text-center mt-5 text-3xl font-bold">Follow Me</div>
             <div className="text-white flex flex-row gap-7 w-fit mx-auto pt-7">
               <div
@@ -251,6 +252,11 @@ export default function Contact() {
               >
                 <FacebookIcon className="cursor-pointer hover:scale-105" />
               </div>{" "}
+            </div>
+            <div className="mt-6 italic text-sm font-medium text-blue-500 ">
+              <span className=" pl-1 ">Copyright</span>
+              <CopyrightIcon className="cursor-pointer mx-1" />
+              <span>2023 Daniel Jebarson K</span>
             </div>
           </div>
         </div>
