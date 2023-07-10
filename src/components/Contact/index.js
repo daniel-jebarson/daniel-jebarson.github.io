@@ -11,6 +11,7 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import * as LottiePlayer from "@lottiefiles/lottie-player";
 import { useState } from "react";
 
 export default function Contact() {
@@ -182,37 +183,19 @@ export default function Contact() {
             </button>
           </form>
         </div>
-        <div className="flex-auto w-80  flex flex-col text-left justify-center   gap-7">
-          <div
-            class="max-w-sm p-6  border rounded-lg shadow bg-gray-800 mx-auto border-gray-700 hover:border-gray-600 "
-            data-aos={"fade-in"}
-            data-aos-delay={600}
-          >
-            <div className="flex flex-col ">
-              <h1 className=" text-2xl mt-3 mb-4 font-bold">Address</h1>{" "}
-              <p>6A Market Street,</p>
-              <p>3rd Lane, YMCA SQUARE,</p>
-              <p>Nazareth, TamilNadu</p>
-            </div>
-            <table className="mt-7">
-              <tr>
-                <td>
-                  {" "}
-                  <PhoneIcon />
-                  <span className="pl-3">7395879337</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <EmailIcon />
-                  <span className="pl-3">danieljebarson21@gmail.com</span>
-                </td>{" "}
-              </tr>
-            </table>
+        <div className="flex-auto w-80  flex flex-col justify-center text-center items-center  gap-1">
+          <div data-aos={"fade-left"}>
+            <lottie-player
+              autoplay
+              loop
+              mode="bounce"
+              src="https://assets9.lottiefiles.com/packages/lf20_3rqwsqnj.json"
+              style={{ width: "350px" }}
+            />
           </div>
           <div data-aos={"slide-up"} className="text-center">
-            <div className="text-center mt-5 text-3xl font-bold">Follow Me</div>
-            <div className="text-white flex flex-row gap-7 w-fit mx-auto pt-7">
+            <div className="text-center mt-2 text-3xl font-bold">Follow Me</div>
+            <div className="text-white flex flex-row gap-7 w-fit mx-auto pt-4">
               <div
                 onClick={() =>
                   window.open("https://github.com/daniel-jebarson", "_blank")

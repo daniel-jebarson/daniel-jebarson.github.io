@@ -1,6 +1,7 @@
 import "../../App.css";
 import DownloadIcon from "@mui/icons-material/Download";
 import LearningCode from "../../assets/images/learn-coding-clipart.svg";
+import * as LottiePlayer from "@lottiefiles/lottie-player";
 
 export default function About() {
   const getDate = () => {
@@ -45,14 +46,23 @@ export default function About() {
 
         <div
           class="relative flex-auto w-32   sm:rounded-lg  pl-4"
-          data-aos={"slide-up"}
+          data-aos={"slide-left"}
         >
-          <img
+          {/* <img
             src={LearningCode}
             alt="Learning Code"
             className="motion-safe:animate-zoomy"
-          />
-          <button className="py-3 text-white mt-7 mx-auto px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800 ">
+          /> */}
+          <div className="motion-safe:animate-zoomy">
+            <lottie-player
+              autoplay
+              loop
+              mode="bounce"
+              src="https://assets10.lottiefiles.com/packages/lf20_w98qte06.json"
+              style={{ width: "350px" }}
+            />
+          </div>
+          <button className="py-3 mt-5 text-white mx-auto px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800 animate-zoomy">
             <a
               href={require("../../assets/files/Daniel Resume.pdf")}
               download={"Dani'sResume.pdf"}
