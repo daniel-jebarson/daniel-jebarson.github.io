@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9db7892f.css",
-    "main.js": "/static/js/main.10a1a0e7.js",
+    "main.css": "/static/css/main.c24fe074.css",
+    "main.js": "/static/js/main.136bab24.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/mixkit-fast-double-click-on-mouse-275.mp3": "/static/media/mixkit-fast-double-click-on-mouse-275.e758e4b03a23060754fe.mp3",
     "static/media/RobotoSlab-Black.ttf": "/static/media/RobotoSlab-Black.b1eefbae7b352cda1c3a.ttf",
@@ -11,15 +11,14 @@
     "static/media/GildaDisplay-Regular.ttf": "/static/media/GildaDisplay-Regular.f712cdf2015640c8cc1e.ttf",
     "static/media/MyImage.webp": "/static/media/MyImage.ab66301e99853ce3d083.webp",
     "static/media/gotosite.webp": "/static/media/gotosite.dc2459843a8d51a90e5d.webp",
-    "static/media/learn-coding-clipart.svg": "/static/media/learn-coding-clipart.eda1b469c5c19f0671f8e579d725c0e2.svg",
     "static/media/github.webp": "/static/media/github.ed1c06d925fff0b57e32.webp",
     "index.html": "/index.html",
-    "main.9db7892f.css.map": "/static/css/main.9db7892f.css.map",
-    "main.10a1a0e7.js.map": "/static/js/main.10a1a0e7.js.map",
+    "main.c24fe074.css.map": "/static/css/main.c24fe074.css.map",
+    "main.136bab24.js.map": "/static/js/main.136bab24.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9db7892f.css",
-    "static/js/main.10a1a0e7.js"
+    "static/css/main.c24fe074.css",
+    "static/js/main.136bab24.js"
   ]
 }
