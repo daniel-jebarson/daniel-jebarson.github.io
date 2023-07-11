@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# <h1 align="center">Personal Portfolio</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a repository for my personal portfolio website, showcasing my skills, projects, and certifications. The website is designed to provide an overview of my work and serve as a professional platform to showcase my abilities and experiences.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Home:** Discover the passion that drives me.
+- **About Me:** An introduction to who I am and what I do, highlighting my skills and expertise.
+- **Resume:** A downloadable version of my resume, providing detailed information about my education, work experience, and skills.
+- **Projects:** A collection of my past and ongoing projects, including descriptions, screenshots, and links to live demos or repositories.
+- **Contact:** A means for visitors to reach out to me, whether it be for collaboration, inquiries, or networking opportunities.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Home Page :
+<img width="960" alt="image" src="https://github.com/daniel-jebarson/daniel-jebarson.github.io/assets/88134306/ecc997bf-173e-4ff8-bb50-40984bf34469">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About Me Page :
+<img width="960" alt="image" src="https://github.com/daniel-jebarson/daniel-jebarson.github.io/assets/88134306/27cf88cc-6ed5-4b0a-bae2-864ae3d176f7">
 
-### `npm test`
+## Resume Page :
+<img width="960" alt="image" src="https://github.com/daniel-jebarson/daniel-jebarson.github.io/assets/88134306/53732e2b-4afb-486e-8ae2-fd28d0a7e414">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Projects Page :
+<img width="960" alt="image" src="https://github.com/daniel-jebarson/daniel-jebarson.github.io/assets/88134306/2da14dd0-c23a-4275-b5c2-2647414339ed">
 
-### `npm run build`
+## Contact Page :
+<img width="957" alt="image" src="https://github.com/daniel-jebarson/daniel-jebarson.github.io/assets/88134306/4787a0f5-99ee-4839-bb97-016ec8e3159e">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **HTML5:** Used to structure the website's content and layout.
+- **TailwindCSS:** Employed to style and enhance the visual presentation of the website.
+- **JavaScript:** Implemented to add interactivity and dynamic elements to the website.
+- **ReactJs:** To elevate the web development experience
+- **Git:** Employed for version control and collaboration throughout the development process.
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run the website locally, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone this repository to your local machine using `git clone https://github.com/daniel-jebarson/daniel-jebarson.github.io.git`
+2. Navigate to the project's directory: `cd daniel-jebarson.github.io`
+3. Then install packages and run it using the below commands
+```
+yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#then run the app
+yarn start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contributing
 
-## Learn More
+I appreciate any feedback, suggestions, or contributions to enhance my portfolio website. If you find any issues or have ideas for improvement, please feel free to open an issue or submit a pull request. Your contributions are valuable and help me grow as a professional.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the [GNU General Public License v3.0](LICENSE). Please refrain from using any personal information or content without proper permission.
 
-### Code Splitting
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you would like to get in touch with me, you can reach me via email at [Mymail](mailto:danieljebarson21@gmail.com). You can also find more information about me and my work on my [LinkedIn](https://www.linkedin.com/in/daniel-jebarson-k-a727a822a) profile.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for visiting my portfolio website! I hope you find it informative and engaging.
