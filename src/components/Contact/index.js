@@ -82,7 +82,7 @@ export default function Contact() {
         Contact
       </div>
       <div className="flex flex-row  ">
-        <div className="flex-auto  w-32 pl-10 overflow-hidden">
+        <div className="flex-auto  w-32 pl-10 overflow-visible">
           <form onSubmit={handleSubmit} data-aos={"slide-up"}>
             <label class="block mb-2 text-2xl font-semibold mt-3  text-white ">
               Get in Touch
