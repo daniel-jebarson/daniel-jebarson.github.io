@@ -76,13 +76,13 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex text-center flex-col gap-12 mt-10 min-h-screen overflow-hidden"
+      className="flex text-center flex-col gap-12 my-10 min-h-screen ml-4 overflow-hidden"
     >
       <div className="text-5xl font-bold" data-aos={"fade"}>
         Contact
       </div>
-      <div className="flex flex-row  ">
-        <div className="flex-auto  w-32 pl-10 overflow-visible">
+      <div className="flex items-center justify-center flex-col md:flex-row ">
+        <div className="flex-auto  md:w-32  sm:pl-0  overflow-visible">
           <form onSubmit={handleSubmit} data-aos={"slide-up"}>
             <label class="block mb-2 text-2xl font-semibold mt-3  text-white ">
               Get in Touch
@@ -98,7 +98,7 @@ export default function Contact() {
                 id="username"
                 required
                 type="text"
-                class="rounded-none rounded-r-lg  border block flex-1 min-w-0 w-full text-sm p-2.5  bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                class="rounded-none rounded-r-lg  border block flex-1 min-w-[170px] max-w-[320px] text-sm p-2.5  bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Name"
               />
             </div>
@@ -113,7 +113,7 @@ export default function Contact() {
                 required
                 minLength={5}
                 type="email"
-                class="rounded-none rounded-r-lg border block flex-1 min-w-0 w-full text-sm p-2.5  bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                class="rounded-none rounded-r-lg border block flex-1 min-w-[170px] w-full max-w-[320px] text-sm p-2.5  bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
                 placeholder="Email"
               />
             </div>
@@ -125,7 +125,7 @@ export default function Contact() {
               required
               minLength={10}
               placeholder="Write your message here..."
-              class="block h-40 text-white mt-10 p-2.5 w-full text-sm rounded-lg border bg-gray-700 border-gray-600 focus:ring-blue-500 focus:border-blue-500 resize-none"
+              class="block h-40 text-white mt-10 p-2.5 min-w-[215px] max-w-[365px] w-full text-sm rounded-lg border bg-gray-700 border-gray-600 focus:ring-blue-500 focus:border-blue-500 resize-none"
             ></textarea>
             <button
               type="submit"
@@ -183,18 +183,23 @@ export default function Contact() {
             </button>
           </form>
         </div>
-        <div className="flex-auto w-80  flex flex-col justify-center text-center items-center  gap-1">
-          <div data-aos={"fade-left"}>
+        <div className="flex-auto w-full md:w-80  flex flex-col justify-center text-center items-center  gap-1">
+          <div
+            data-aos={"fade-left"}
+            className="w-[180px]  md:w-[290px] lg:w-[350px] hidden md:block"
+          >
             <lottie-player
               autoplay
               loop
               mode="bounce"
               src="https://assets9.lottiefiles.com/packages/lf20_3rqwsqnj.json"
-              style={{ width: "350px" }}
+              // style={{ width: "80%" }}
             />
           </div>
-          <div data-aos={"slide-up"} className="text-center">
-            <div className="text-center mt-2 text-3xl font-bold">Follow Me</div>
+          <div data-aos={"slide-up"} className="text-center mt-10">
+            <div className="text-center  mt-2  text-3xl xs:text-xl md:text-2xl font-bold">
+              Follow Me
+            </div>
             <div className="text-white flex flex-row gap-7 w-fit mx-auto pt-4">
               <div
                 onClick={() =>
