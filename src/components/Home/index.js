@@ -45,7 +45,7 @@ export default function Home() {
         <a href="#contact">Contact Me</a>
       </button>
       <div
-        className=" cursor-pointer w-fit left-[62%] absolute bottom-16"
+        className=" cursor-pointer w-fit left-[48%] lg:left-[62%] absolute bottom-16"
         data-aos="flip-up"
         data-aos-offset="20"
         data-aos-delay="2000"

@@ -15,14 +15,20 @@ export default function About() {
   return (
     <div
       id="about"
-      className="min-h-screen bg-white flex flex-col text-center gap-5 text-black text-lg  font-normal"
+      className="min-h-screen bg-white flex flex-col text-center gap-5 text-black text-sm lg:text-lg  font-normal"
     >
-      <div className="head text-5xl mt-12 font-bold" data-aos={"slide-down"}>
+      <div
+        className="head text-3xl lg:text-5xl mt-12 font-bold"
+        data-aos={"slide-down"}
+      >
         About Me
       </div>
       <div className="flex flex-row  gap-6 ml-8">
         <div className="flex-col mt-14 flex flex-auto w-64 gap-6">
-          <h3 className="text-3xl font-medium" data-aos={"fade-left"}>
+          <h3
+            className="text-xl lg:text-3xl font-medium"
+            data-aos={"fade-left"}
+          >
             I'm <span className="text-yellow-600">Daniel Jebarson,</span> a Web
             Enthusiast
           </h3>
@@ -62,7 +68,7 @@ export default function About() {
               style={{ width: "350px" }}
             />
           </div>
-          <button className="py-3 mt-5 text-white mx-auto px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800 animate-zoomy">
+          <button className="py-1 md:py-2 lg:py-3 mt-3 lg:mt-5 text-white mx-auto px-4  lg:px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800 sm:text-xl  animate-zoomy">
             <a
               href={require("../../assets/files/Daniel Resume.pdf")}
               download={"Dani'sResume.pdf"}
