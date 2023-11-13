@@ -7,7 +7,7 @@ export default function Resume() {
       <div className="text-5xl font-bold py-8" data-aos={"slide-down"}>
         Resume
       </div>
-      <div className="grid grid-cols-2 gap-7 mt-7">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-7">
         <ol class="relative border-l  border-gray-700 ml-9 mb-6">
           <li class="mb-10" data-aos="zoom-in">
             <span class="absolute flex items-center justify-center w-6 h-6   rounded-full -left-3 ring-8  ring-gray-900 bg-blue-900">

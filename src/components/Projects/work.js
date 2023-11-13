@@ -35,18 +35,22 @@ export default function work({ title, desc, tags, link, code, img }) {
                 <img
                   src={require("../../assets/images/github.webp")}
                   alt={"github"}
-                  className="w-4/5 h-4/5 object-contain"
+                  className="w-3/5 h-3/5 lg:w-4/5 lg:h-4/5 object-contain"
                 />
               </div>
             </div>
           </div>
           <div className="mt-5">
-            <h3 className="text-white font-bold text-[24px]">{title}</h3>
-            <p className="mt-2 text-secondary text-[14px]">{desc}</p>
+            <h3 className="text-white font-bold text-[20px] lg:text-[24px]">
+              {title}
+            </h3>
+            <p className="mt-2 text-secondary text-[10px] lg:text-[14px]">
+              {desc}
+            </p>
           </div>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2 text-[14px]">
+        <div className="mt-4 flex flex-wrap gap-2 text-[10px] lg:text-[14px]">
           {tags.map((tag) => (
             <p
               key={tag.name}
