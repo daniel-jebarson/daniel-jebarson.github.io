@@ -7,7 +7,7 @@ import Contact from "./Contact";
 
 export default function Display() {
   return (
-    <div className="pl-[25%]    w-screen back text-white  ">
+    <div className="lg:pl-[25%]    w-screen back text-white  ">
       <Home />
       <About />
       <Resume />
