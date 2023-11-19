@@ -4,6 +4,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { useState } from "react";
+import ProfileCard from "./ProfileCard";
 
 export default function Slidebar() {
   const [select, setSelect] = useState(0);
@@ -11,14 +12,7 @@ export default function Slidebar() {
     <div className="flex-none hidden lg:block  bg-black h-screen min-w-[25%] fixed ">
       <div className="nav flex  text-white text-lg mt-10 flex-col align-middle justify-center text-center w-full gap-5 overflow-hidden">
         <div data-aos="slide-down">
-          <img
-            src={require("../assets/images/MyImage.webp")}
-            alt="Daniel Jebarson"
-            className="rounded-full border-solid cursor-pointer  border-[8px] border-stone-600 min-h-fit mx-auto  max-w-[190px]"
-          />
-          <h3 className="text-white name py-4 font-medium ">
-            Daniel Jebarson K
-          </h3>
+          <ProfileCard />
         </div>
         <p
           onClick={() => setSelect(0)}
