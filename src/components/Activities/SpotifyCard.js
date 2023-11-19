@@ -1,6 +1,7 @@
 import { formatTime, getPercentage } from "../../utils/getElapsedTime";
 import { BsSpotify } from "react-icons/bs";
 import { ImSpotify } from "react-icons/im";
+
 export default function SpotifyCard({ spotifyData: presenceData }) {
   const openNewTab = (link) => {
     const url = `https://open.spotify.com/track/${link}`;
@@ -57,16 +58,13 @@ export default function SpotifyCard({ spotifyData: presenceData }) {
           </div>
         </div>
       </div>
-
-      <button
-        onClick={() => {
-          openNewTab(presenceData.sync_id);
-        }}
+      <a
+        href={`https://open.spotify.com/track/${presenceData.sync_id}`}
         className="py-1 px-5 mt-3 rounded-md text-[15px] bg-blue-600 items-center flex flex-row gap-3"
       >
         <ImSpotify className="  bg-blue-800  text-slate-300 max-w-[25px] max-h-[25px] rounded-full   " />
         <span>Play on Spotify</span>
-      </button>
+      </a>
     </div>
   );
 }

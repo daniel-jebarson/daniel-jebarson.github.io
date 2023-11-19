@@ -79,7 +79,7 @@ export default function ProfileCard() {
       <div className="flex flex-col">
         <span>Activities</span>
         <div>
-          {/* <CodeCard presenceData={presenceData} /> */}
+          <CodeCard presenceData={presenceData} />
           <SpotifyCard spotifyData={spotifyData} />
         </div>
       </div>
