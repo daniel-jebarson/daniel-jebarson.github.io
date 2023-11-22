@@ -66,9 +66,7 @@ export default function ProfileCard() {
     <div>
       <div className="relative">
         <img
-          src={
-            "https://cdn.discordapp.com/avatars/811919559086702642/c7ae4272ce5cf41d3c5dcce18c5d1564.png"
-          }
+          src={require("../assets/images/MyImage.webp")}
           alt="Daniel Jebarson"
           className="rounded-full border-solid cursor-pointer  border-[6px]  border-neutral-800 shadow-md  min-h-fit mx-auto  max-w-[190px]"
         />
@@ -76,17 +74,24 @@ export default function ProfileCard() {
         <DarkModeSharp className="bottom-2 bg-neutral-800 outline-neutral-800  left-3 ml-[55%] outline outline-4 w-28 h-28 rounded-full  absolute text-yellow-500 " />
       </div>
       <h3 className="text-white name py-4 font-medium ">Daniel Jebarson K</h3>
-      <div className="flex flex-col">
+      {/* <div className="flex flex-col">
         <span>Activities</span>
         <div>
           <CodeCard presenceData={presenceData} />
           <SpotifyCard spotifyData={spotifyData} />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 
   // if (isLoading || error)
+  //  <img
+  //   src={
+  //     "https://cdn.discordapp.com/avatars/811919559086702642/c7ae4272ce5cf41d3c5dcce18c5d1564.png"
+  //   }
+  //   alt="Daniel Jebarson"
+  //   className="rounded-full border-solid cursor-pointer  border-[6px]  border-neutral-800 shadow-md  min-h-fit mx-auto  max-w-[190px]"
+  // />
   //   return (
   //     <div>
   //       <img
