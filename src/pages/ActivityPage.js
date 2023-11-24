@@ -26,11 +26,12 @@ export default function ActivityPage() {
     data: userData,
     isLoading,
     error,
-  } = useFetch("https://api.lanyard.rest/v1/users/811919559086702642");
+  } = useFetch(
+    `https://api.lanyard.rest/v1/users/${process.env.REACT_APP_DISCORD_USER_ID}`
+  );
   useEffect(() => {
     if (!isLoading && userData != null && userData.activities != null) {
       setTotalActivity(userData.activities.length);
-      // console.log(userData);
     }
   }, [isLoading]);
 
@@ -38,7 +39,7 @@ export default function ActivityPage() {
   else
     return (
       <div className="h-screen flex items-center justify-center bg-gray-700 text-white">
-        <div className="max-w-sm min-w-[384px] my-auto bg-gray-900 rounded-lg overflow-hidden shadow-lg ">
+        <div className="max-w-sm min-w-[384px] my-auto bg-gray-900 rounded-lg overflow-hidden shadow-lg py-4">
           <div className=" px-4">
             <div className="text-center my-4">
               <div className="relative">
