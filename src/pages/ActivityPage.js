@@ -5,6 +5,10 @@ import {
   FiberManualRecordSharp,
   TerminalRounded,
 } from "@mui/icons-material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CodeCard from "../components/Activities/CodeCard";
 import SpotifyCard from "../components/Activities/SpotifyCard";
@@ -24,18 +28,17 @@ export default function ActivityPage() {
     error,
   } = useFetch("https://api.lanyard.rest/v1/users/811919559086702642");
   useEffect(() => {
-    if (userData != null && userData.activities != null) {
+    if (!isLoading && userData != null && userData.activities != null) {
       setTotalActivity(userData.activities.length);
-      console.log(userData);
+      // console.log(userData);
     }
-    console.log(userData);
   }, [isLoading]);
 
   if (isLoading || error) return <div> oklopo,</div>;
   else
     return (
-      <div className="h-screen bg-gray-700 text-white  pt-12">
-        <div className="max-w-sm mx-auto bg-gray-900 rounded-lg overflow-hidden shadow-lg">
+      <div className="h-screen flex items-center justify-center bg-gray-700 text-white">
+        <div className="max-w-sm min-w-[384px] my-auto bg-gray-900 rounded-lg overflow-hidden shadow-lg ">
           <div className=" px-4">
             <div className="text-center my-4">
               <div className="relative">
@@ -69,13 +72,14 @@ export default function ActivityPage() {
               </div>
             </div>
           </div>
-          <div className="flex-col justify-center pb-4  ">
+          <div className="flex-col justify-center pb-6  ">
             <div
               className={`inline-flex flex-row mx-[10%] my-5 ${
                 totalActivity === 0 ? "hidden" : null
               }`}
             >
               <button
+                className={`${currActivity <= 0 ? "hidden" : null}`}
                 onClick={() => {
                   setCurrActivity(currActivity - 1);
                 }}
@@ -93,17 +97,61 @@ export default function ActivityPage() {
                 <CodeCard presenceData={userData.activities[currActivity]} />
               )}
               <button
+                className={`${
+                  currActivity >= totalActivity - 1 ? "hidden" : null
+                }`}
                 onClick={() => {
                   setCurrActivity(currActivity + 1);
                 }}
-                disabled={currActivity <= totalActivity - 1}
+                disabled={currActivity >= totalActivity - 1}
               >
                 <ArrowForwardIosIcon
                   className={`${
-                    currActivity <= totalActivity - 1 ? "text-slate-500" : null
+                    currActivity >= totalActivity - 1 ? "text-slate-500" : null
                   }`}
                 />
               </button>
+            </div>
+          </div>
+          <div className="text-white justify-around flex flex-row gap-7 w-fit mx-auto pb-5">
+            <div
+              onClick={() =>
+                window.open("https://github.com/daniel-jebarson", "_blank")
+              }
+            >
+              <GitHubIcon className="cursor-pointer hover:scale-105" />
+            </div>
+            <div
+              onClick={() =>
+                window.open(
+                  "https://www.instagram.com/daniel_diago2003",
+                  "_blank"
+                )
+              }
+            >
+              {" "}
+              <InstagramIcon className="cursor-pointer hover:scale-105" />
+            </div>
+            <div
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/daniel-jebarson-k-a727a822a",
+                  "_blank"
+                )
+              }
+            >
+              {" "}
+              <LinkedInIcon className="cursor-pointer hover:scale-105" />
+            </div>
+            <div
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/daniel.jebarson.9",
+                  "_blank"
+                )
+              }
+            >
+              <FacebookIcon className="cursor-pointer hover:scale-105" />
             </div>
           </div>
         </div>
