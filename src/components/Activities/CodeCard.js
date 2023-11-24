@@ -2,7 +2,7 @@ import { getElapsedTime } from "../../utils/getElapsedTime";
 
 export default function CodeCard({ presenceData }) {
   return (
-    <div className="flex flex-row justify-center items-center  ">
+    <div className="flex mx-2 hover:scale-[1.007] transition-all duration-100  hover:cursor-pointer flex-row justify-center items-center  ">
       <div className="relative">
         <img
           className="w-full h-full my-[6px] max-h-[80px] max-w-[80px] object-cover"
@@ -15,7 +15,6 @@ export default function CodeCard({ presenceData }) {
           alt=""
         />
       </div>
-      <div className="absolute top-0 bottom-0 left-0 right-0 z-10 opacity-50"></div>
       <div className=" z-20 px-4 font-normal text-xs space-y-2">
         <p className="font-extrabold  text-[14px] pt-2">
           {presenceData.assets.small_text}

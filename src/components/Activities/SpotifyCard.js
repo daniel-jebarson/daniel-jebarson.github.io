@@ -3,14 +3,16 @@ import { BsSpotify } from "react-icons/bs";
 import { ImSpotify } from "react-icons/im";
 
 export default function SpotifyCard({ spotifyData: presenceData }) {
-  const openNewTab = (link) => {
-    const url = `https://open.spotify.com/track/${link}`;
-    console.log("hi");
-    window.open(url, "_blank");
-  };
-
   return (
-    <div className="flex flex-row justify-center items-center  ">
+    <div
+      className="flex mx-2 hover:scale-[1.013] transition-all duration-100  hover:cursor-pointer  flex-row justify-center items-center  "
+      onClick={() => {
+        window.open(
+          `https://open.spotify.com/track/${presenceData.sync_id}`,
+          "_blank"
+        );
+      }}
+    >
       <div className="relative">
         <img
           className="w-full h-full my-[6px] max-h-[80px] max-w-[80px] object-cover"
@@ -21,7 +23,6 @@ export default function SpotifyCard({ spotifyData: presenceData }) {
         />
         <BsSpotify className="bottom-[2px] bg-neutral-800 outline-neutral-800  right-0  outline outline-2 max-w-[25px] max-h-[25px] rounded-full  absolute text-green-500 " />
       </div>
-      <div className="absolute top-0 bottom-0 left-0 right-0 z-10 opacity-50"></div>
       <div className=" z-20 px-4 font-normal text-xs space-y-1">
         <p className="font-extrabold  text-[14px]">
           {presenceData.assets.large_text}
@@ -54,13 +55,6 @@ export default function SpotifyCard({ spotifyData: presenceData }) {
           ></div>
         </div>
       </div>
-      {/* <a
-        href={`https://open.spotify.com/track/${presenceData.sync_id}`}
-        className="py-1 px-5 mt-3 rounded-md text-[15px] bg-blue-600 items-center flex flex-row gap-3"
-      >
-        <ImSpotify className="  bg-blue-800  text-slate-300 max-w-[25px] max-h-[25px] rounded-full   " />
-        <span>Play on Spotify</span>
-      </a> */}
     </div>
   );
 }
