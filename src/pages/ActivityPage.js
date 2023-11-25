@@ -3,7 +3,7 @@ import {
   DarkModeSharp,
   DoNotDisturbOnSharp,
   FiberManualRecordSharp,
-  TerminalRounded,
+  // TerminalRounded,
 } from "@mui/icons-material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -12,7 +12,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CodeCard from "../components/Activities/CodeCard";
 import SpotifyCard from "../components/Activities/SpotifyCard";
-import { getElapsedTime, formatTime } from "../utils/getElapsedTime";
+// import { getElapsedTime, formatTime } from "../utils/getElapsedTime";
 import { useEffect, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import { isSpotify } from "../utils/identifyActivity";
@@ -22,17 +22,19 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 export default function ActivityPage() {
   const [totalActivity, setTotalActivity] = useState(0);
   const [currActivity, setCurrActivity] = useState(0);
+  const { REACT_APP_DISCORD_USER_ID } = process.env;
   const {
     data: userData,
     isLoading,
     error,
   } = useFetch(
-    `https://api.lanyard.rest/v1/users/${process.env.REACT_APP_DISCORD_USER_ID}`
+    `https://api.lanyard.rest/v1/users/${REACT_APP_DISCORD_USER_ID}`
   );
   useEffect(() => {
     if (!isLoading && userData != null && userData.activities != null) {
       setTotalActivity(userData.activities.length);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLoading]);
 
   if (isLoading || error) return <div> oklopo,</div>;
