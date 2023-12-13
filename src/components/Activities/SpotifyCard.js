@@ -1,8 +1,15 @@
 import { formatTime, getPercentage } from "../../utils/getElapsedTime";
 import { BsSpotify } from "react-icons/bs";
 import { ImSpotify } from "react-icons/im";
-
+import useTimer from "../../hooks/useTimer";
 export default function SpotifyCard({ spotifyData: presenceData }) {
+  const startTimeInSeconds = Math.ceil(
+    (new Date() - presenceData.timestamps.start) / 1000
+  );
+  const endTimeInSeconds = Math.ceil(
+    (presenceData.timestamps.end - presenceData.timestamps.start) / 1000
+  );
+  const time = useTimer(startTimeInSeconds, endTimeInSeconds);
   return (
     <div
       className="flex mx-2 hover:scale-[1.013] transition-all duration-100  hover:cursor-pointer  flex-row justify-center items-center  "
@@ -32,11 +39,9 @@ export default function SpotifyCard({ spotifyData: presenceData }) {
         <div class="flex justify-between">
           <span class="text-sm font-medium  ">
             {" "}
-            {formatTime(
-              Math.ceil(
-                (presenceData.created_at - presenceData.timestamps.start) / 1000
-              )
-            )}
+            <p>{`${time.hours === 0 ? "" : time.hours + "h :"} ${
+              time.minutes === 0 && time.hours === 0 ? "" : time.minutes + "m :"
+            } ${time.seconds + "s"}`}</p>
           </span>
           <span class="text-sm font-medium  ">
             {" "}

@@ -12,8 +12,11 @@ const getElapsedTime = (curr) => {
 
 const getPercentage = (data) => {
   let tot = Math.ceil((data.timestamps.end - data.timestamps.start) / 1000);
-  let curr = Math.ceil((data.created_at - data.timestamps.start) / 1000);
-  return Math.ceil((curr * 100) / tot);
+  let now = new Date();
+  let curr = Math.ceil((now - data.timestamps.start) / 1000);
+  let perc = Math.ceil((curr * 100) / tot);
+  if (perc >= 100) return 100;
+  return perc;
 };
 
 const formatTime = (seconds) => {
