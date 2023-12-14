@@ -1,4 +1,10 @@
 const isSpotify = (data) => {
   return data.name === "Spotify";
 };
-export { isSpotify };
+const filterActivities = (inputArray) => {
+  const filteredArray = inputArray.filter((obj) =>
+    obj.hasOwnProperty("assets")
+  );
+  return filteredArray;
+};
+export { isSpotify, filterActivities };

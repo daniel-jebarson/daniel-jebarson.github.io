@@ -40,8 +40,8 @@ export default function ActivityPage() {
   if (isLoading || error) return <div> oklopo,</div>;
   else
     return (
-      <div className="h-screen flex items-center justify-center bg-gray-700 text-white">
-        <div className="max-w-sm min-w-[384px] my-auto bg-gray-900 rounded-lg overflow-hidden shadow-lg py-4">
+      <div className="h-screen flex items-center justify-center bg-gray-700 text-white ">
+        <div className="max-w-sm min-w-[384px] my-auto bg-gray-900 rounded-2xl overflow-hidden shadow-lg py-4">
           <div className=" px-4">
             <div className="text-center my-4">
               <div className="relative">

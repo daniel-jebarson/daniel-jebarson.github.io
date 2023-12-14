@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Axios from "axios";
-
+import { filterActivities } from "../utils/identifyActivity";
 function useFetch(url) {
   const [data, setData] = useState(null);
   const [isLoading, setisLoading] = useState(true);
@@ -10,7 +10,12 @@ function useFetch(url) {
     setisLoading(true);
     Axios.get(url)
       .then((response) => {
-        setData(response.data.data);
+        let tempData = response.data.data;
+        if (tempData.hasOwnProperty("activities")) {
+          tempData["activities"] = filterActivities(tempData.activities);
+        }
+        setData(tempData);
+
         console.log(response.data.data);
       })
       .catch((err) => {
