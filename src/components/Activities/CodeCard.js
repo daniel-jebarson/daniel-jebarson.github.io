@@ -1,4 +1,3 @@
-import { getElapsedTime } from "../../utils/getElapsedTime";
 import useTimer from "../../hooks/useTimer";
 export default function CodeCard({ presenceData }) {
   const startTimeInSeconds = Math.ceil(
