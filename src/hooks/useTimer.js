@@ -11,8 +11,8 @@ const useTimer = (startTimeInSeconds, endTimeInSeconds = -1) => {
 
   useEffect(() => {
     startTimeRef.current = startTimeInSeconds;
-    if (endTimeInSeconds != -1 && startTimeRef.current >= endTimeInSeconds) {
-      startTimeInSeconds = endTimeInSeconds;
+    if (endTimeInSeconds !== -1 && startTimeRef.current >= endTimeInSeconds) {
+      startTimeRef.current = endTimeInSeconds;
     }
 
     let initialHours = Math.floor(startTimeRef.current / 3600);
