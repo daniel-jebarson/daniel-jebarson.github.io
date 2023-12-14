@@ -1,6 +1,10 @@
 import { getElapsedTime } from "../../utils/getElapsedTime";
-
+import useTimer from "../../hooks/useTimer";
 export default function CodeCard({ presenceData }) {
+  const startTimeInSeconds = Math.ceil(
+    (new Date() - presenceData.timestamps.start) / 1000
+  );
+  const time = useTimer(startTimeInSeconds);
   return (
     <div className="flex mx-2 hover:scale-[1.007] transition-all duration-100  hover:cursor-pointer flex-row justify-center items-center  ">
       <div className="relative">
@@ -21,7 +25,9 @@ export default function CodeCard({ presenceData }) {
         </p>
         <p className="font-medium">{presenceData.details}</p>
         <p>{presenceData.state}</p>
-        <p>{getElapsedTime(presenceData.timestamps.start)}</p>
+        <p>{`${time.hours === 0 ? "" : time.hours + "h :"} ${
+          time.minutes === 0 && time.hours === 0 ? "" : time.minutes + "m :"
+        } ${time.seconds + "s"}`}</p>
       </div>
     </div>
   );

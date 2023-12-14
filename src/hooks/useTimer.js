@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useTimer = (startTimeInSeconds, endTimeInSeconds) => {
+const useTimer = (startTimeInSeconds, endTimeInSeconds = -1) => {
   const [time, setTime] = useState({
     hours: 0,
     minutes: 0,
@@ -9,7 +9,7 @@ const useTimer = (startTimeInSeconds, endTimeInSeconds) => {
 
   useEffect(() => {
     // Convert start time to hours, minutes, and seconds
-    if (startTimeInSeconds >= endTimeInSeconds) {
+    if (endTimeInSeconds != -1 && startTimeInSeconds >= endTimeInSeconds) {
       startTimeInSeconds = endTimeInSeconds;
     }
     let initialHours = Math.floor(startTimeInSeconds / 3600);
@@ -42,8 +42,9 @@ const useTimer = (startTimeInSeconds, endTimeInSeconds) => {
 
         // Check if the end time is reached
         if (
+          endTimeInSeconds != -1 &&
           prevTime.hours * 3600 + prevTime.minutes * 60 + newSeconds >
-          endTimeInSeconds
+            endTimeInSeconds
         ) {
           clearInterval(interval);
           return prevTime;
