@@ -3,7 +3,6 @@ import {
   DarkModeSharp,
   DoNotDisturbOnSharp,
   FiberManualRecordSharp,
-  // TerminalRounded,
 } from "@mui/icons-material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -12,16 +11,17 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CodeCard from "../components/Activities/CodeCard";
 import SpotifyCard from "../components/Activities/SpotifyCard";
-// import { getElapsedTime, formatTime } from "../utils/getElapsedTime";
 import { useEffect, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import { isSpotify } from "../utils/identifyActivity";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import Loader from "../components/Loader";
 
 export default function ActivityPage() {
   const [totalActivity, setTotalActivity] = useState(0);
   const [currActivity, setCurrActivity] = useState(0);
+  const [showLoading, setShowLoading] = useState(true);
   const { REACT_APP_DISCORD_USER_ID } = process.env;
   const {
     data: userData,
@@ -34,10 +34,26 @@ export default function ActivityPage() {
     if (!isLoading && userData != null && userData.activities != null) {
       setTotalActivity(userData.activities.length);
     }
+    const timer = setTimeout(() => {
+      setShowLoading(false);
+    }, 3500);
+
+    return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isLoading]);
 
-  if (isLoading || error) return <div> oklopo,</div>;
+  if (isLoading || error || showLoading)
+    return (
+      <div className="flex items-center bg-gray-700 justify-center text-center text-white h-screen">
+        <div className="bg-gray-900 p-6 rounded-lg shadow-md">
+          <div>
+            {" "}
+            <Loader />
+          </div>
+          <p className="text-2xl font-bold">Loading...</p>
+        </div>
+      </div>
+    );
   else
     return (
       <div className="h-screen flex items-center justify-center bg-gray-700 text-white ">
@@ -46,8 +62,12 @@ export default function ActivityPage() {
             <div className="text-center my-4">
               <div className="relative">
                 <img
+                  onClick={() => {
+                    window.location.href = window.location.origin;
+                  }}
                   src={`https://cdn.discordapp.com/avatars/811919559086702642/${userData["discord_user"]["avatar"]}.png`}
                   alt={`${userData["discord_user"]["global_name"]}`}
+                  title={"My page"}
                   className="rounded-full border-solid cursor-pointer  border-[6px]  border-neutral-800 shadow-md  min-h-fit mx-auto  max-w-[190px]"
                 />
 
@@ -118,6 +138,7 @@ export default function ActivityPage() {
           </div>
           <div className="text-white justify-around flex flex-row gap-7 w-fit mx-auto pb-5">
             <div
+              title="Github"
               onClick={() =>
                 window.open("https://github.com/daniel-jebarson", "_blank")
               }
@@ -125,6 +146,7 @@ export default function ActivityPage() {
               <GitHubIcon className="cursor-pointer hover:scale-105" />
             </div>
             <div
+              title="Instagram"
               onClick={() =>
                 window.open(
                   "https://www.instagram.com/daniel_diago2003",
@@ -136,6 +158,7 @@ export default function ActivityPage() {
               <InstagramIcon className="cursor-pointer hover:scale-105" />
             </div>
             <div
+              title="Linkedin"
               onClick={() =>
                 window.open(
                   "https://www.linkedin.com/in/daniel-jebarson-k-a727a822a",
@@ -147,6 +170,7 @@ export default function ActivityPage() {
               <LinkedInIcon className="cursor-pointer hover:scale-105" />
             </div>
             <div
+              title="Facebook"
               onClick={() =>
                 window.open(
                   "https://www.facebook.com/daniel.jebarson.9",
