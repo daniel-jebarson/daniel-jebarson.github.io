@@ -1,5 +1,6 @@
 import Work from "./work";
 import { projects } from "../../constants";
+
 export default function Projects() {
   return (
     <div

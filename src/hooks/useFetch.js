@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Axios from "axios";
 import { filterActivities } from "../utils/identifyActivity";
+
 function useFetch(url) {
   const [data, setData] = useState(null);
   const [isLoading, setisLoading] = useState(true);

@@ -1,4 +1,5 @@
 import useTimer from "../../hooks/useTimer";
+
 export default function CodeCard({ presenceData }) {
   const startTimeInSeconds = Math.ceil(
     (new Date() - presenceData.timestamps.start) / 1000

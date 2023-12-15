@@ -1,7 +1,7 @@
 import { formatTime, getPercentage } from "../../utils/getElapsedTime";
 import { BsSpotify } from "react-icons/bs";
-// import { ImSpotify } from "react-icons/im";
 import useTimer from "../../hooks/useTimer";
+
 export default function SpotifyCard({ spotifyData: presenceData }) {
   const startTimeInSeconds = Math.ceil(
     (new Date() - presenceData.timestamps.start) / 1000

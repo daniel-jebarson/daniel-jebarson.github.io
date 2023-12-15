@@ -1,4 +1,5 @@
 import AtomicSpinner from "atomic-spinner";
+
 export default function Loader() {
   return (
     <>

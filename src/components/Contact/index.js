@@ -2,7 +2,6 @@ import EmailIcon from "@mui/icons-material/Email";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import PersonIcon from "@mui/icons-material/Person";
 import FileDownloadDoneIcon from "@mui/icons-material/FileDownloadDone";
-// import PhoneIcon from "@mui/icons-material/Phone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -11,7 +10,7 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import * as LottiePlayer from "@lottiefiles/lottie-player";
+// import * as LottiePlayer from "@lottiefiles/lottie-player";
 import { useState } from "react";
 
 export default function Contact() {
