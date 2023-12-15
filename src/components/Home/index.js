@@ -1,12 +1,25 @@
 import Typewriter from "typewriter-effect";
 import GraphemeSplitter from "grapheme-splitter";
 import "../../App.css";
+import { NavLink } from "react-router-dom";
 
 export default function Home() {
   const stringSplitter = (string) => {
     const splitter = new GraphemeSplitter();
     return splitter.splitGraphemes(string);
   };
+
+  const scroll = (section) => {
+    if (section === "#") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <div className="min-h-screen grid grid-cols-1 gap-7 name content-center text-center">
       <h1
@@ -42,7 +55,14 @@ export default function Home() {
         data-aos="zoom-out-up"
         data-aos-delay="1400"
       >
-        <a href="#contact">Contact Me</a>
+        <NavLink
+          to="#contact"
+          onClick={() => {
+            scroll("contact");
+          }}
+        >
+          <p title="Contact"> Contact Me</p>
+        </NavLink>
       </button>
       <div
         className=" cursor-pointer w-fit left-[48%] lg:left-[62%] absolute bottom-16"
@@ -50,19 +70,26 @@ export default function Home() {
         data-aos-offset="20"
         data-aos-delay="2000"
       >
-        <a href="#about" className="text-slate-400">
-          <svg
-            width="24"
-            height="24"
-            xmlns="http://www.w3.org/2000/svg"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            fill="currentColor"
-            className="motion-safe:animate-bounce"
-          >
-            <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z" />
-          </svg>
-        </a>
+        <NavLink
+          to="#about"
+          onClick={() => {
+            scroll("about");
+          }}
+        >
+          <div className="text-slate-400">
+            <svg
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fillRule="evenodd"
+              clipRule="evenodd"
+              fill="currentColor"
+              className="motion-safe:animate-bounce"
+            >
+              <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm5.247 8l-5.247 6.44-5.263-6.44-.737.678 6 7.322 6-7.335-.753-.665z" />
+            </svg>
+          </div>
+        </NavLink>
       </div>
     </div>
   );
