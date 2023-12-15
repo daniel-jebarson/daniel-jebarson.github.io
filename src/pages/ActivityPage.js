@@ -17,6 +17,7 @@ import { isSpotify } from "../utils/identifyActivity";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import Loader from "../components/Loader";
+import { NavLink } from "react-router-dom";
 
 export default function ActivityPage() {
   const [totalActivity, setTotalActivity] = useState(0);
@@ -61,15 +62,14 @@ export default function ActivityPage() {
           <div className=" px-4">
             <div className="text-center my-4">
               <div className="relative">
-                <img
-                  onClick={() => {
-                    window.location.href = window.location.origin;
-                  }}
-                  src={`https://cdn.discordapp.com/avatars/811919559086702642/${userData["discord_user"]["avatar"]}.png`}
-                  alt={`${userData["discord_user"]["global_name"]}`}
-                  title={"My page"}
-                  className="rounded-full border-solid cursor-pointer  border-[6px]  border-neutral-800 shadow-md  min-h-fit mx-auto  max-w-[190px]"
-                />
+                <NavLink to={"/"}>
+                  <img
+                    src={`https://cdn.discordapp.com/avatars/811919559086702642/${userData["discord_user"]["avatar"]}.png`}
+                    alt={`${userData["discord_user"]["global_name"]}`}
+                    title={"My page"}
+                    className="rounded-full border-solid cursor-pointer  border-[6px]  border-neutral-800 shadow-md  min-h-fit mx-auto  max-w-[190px]"
+                  />
+                </NavLink>
 
                 {userData.discord_status === "idle" ? (
                   <DarkModeSharp className="bottom-2 bg-neutral-800 outline-neutral-800  left-3 ml-[55%] outline outline-4 w-28 h-28 rounded-full  absolute text-yellow-500 " />

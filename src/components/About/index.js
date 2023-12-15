@@ -11,6 +11,7 @@ export default function About() {
     var age = Math.abs(year - 1970);
     return age;
   };
+
   return (
     <div
       id="about"
@@ -67,15 +68,17 @@ export default function About() {
               style={{ width: "350px" }}
             />
           </div>
-          <button className="py-1 md:py-2 lg:py-3 mt-3 lg:mt-5 text-white mx-auto px-4  lg:px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800 sm:text-xl  animate-zoomy">
-            <a
-              href={require("../../assets/files/Daniel Resume.pdf")}
-              download={"Dani'sResume.pdf"}
-            >
-              Download CV
-              <DownloadIcon />
-            </a>
-          </button>
+
+          <a
+            href={require("../../assets/files/Daniel Resume.pdf")}
+            download={"Dani's Resume"}
+            target="_blank"
+            rel="noreferrer"
+            className="py-1 md:py-2 lg:py-3 mt-3 lg:mt-5 text-white mx-auto px-4  lg:px-9 bg-blue-600 border-2 w-fit border-blue-500 rounded-3xl  hover:-translate-y-1.5 duration-[350ms] hover:duration-[350ms] hover:bg-blue-800 hover:scale-[1.023] focus:bg-blue-800 sm:text-xl  animate-zoomy"
+          >
+            Download CV
+            <DownloadIcon />
+          </a>
         </div>
       </div>
     </div>

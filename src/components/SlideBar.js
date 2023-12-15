@@ -4,30 +4,37 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Slidebar() {
   const [select, setSelect] = useState(0);
-  const openNewTab = () => {
-    window.location.href = `${window.location.origin}/activity`;
+
+  const scroll = (section) => {
+    if (section === "#") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
   };
+
   return (
     <div className="flex-none hidden lg:block  bg-black h-screen min-w-[25%] fixed ">
       <div className="nav flex  text-white text-lg mt-10 flex-col align-middle justify-center text-center w-full gap-5 overflow-hidden">
-        <div
-          data-aos="slide-down"
-          onClick={() => {
-            openNewTab();
-          }}
-        >
-          <img
-            src={require("../assets/images/MyImage.webp")}
-            alt="Daniel Jebarson"
-            title="Discord Activity"
-            className="rounded-full border-solid cursor-pointer  border-[8px] border-stone-600 min-h-fit mx-auto  max-w-[190px]"
-          />
-          <h3 className="text-white name py-4 font-medium ">
-            Daniel Jebarson K
-          </h3>
+        <div data-aos="slide-down">
+          <NavLink to={"/activity"}>
+            <img
+              src={require("../assets/images/MyImage.webp")}
+              alt="Daniel Jebarson"
+              title="Discord Activity"
+              className="rounded-full border-solid cursor-pointer  border-[8px] border-stone-600 min-h-fit mx-auto  max-w-[190px]"
+            />
+            <h3 className="text-white name py-4 font-medium ">
+              Daniel Jebarson K
+            </h3>
+          </NavLink>
         </div>
         <p
           onClick={() => setSelect(0)}
@@ -37,9 +44,14 @@ export default function Slidebar() {
           data-aos="slide-right"
           data-aos-delay="200"
         >
-          <a title="Home Page" href="/#">
-            Home
-          </a>
+          <NavLink
+            to="#"
+            onClick={() => {
+              scroll("#");
+            }}
+          >
+            <p title="Home Page"> Home</p>
+          </NavLink>
         </p>
         <p
           onClick={() => setSelect(1)}
@@ -49,10 +61,14 @@ export default function Slidebar() {
           data-aos-delay="600"
           data-aos="slide-left"
         >
-          <a href="#about" title="About me">
-            {" "}
-            About Me
-          </a>
+          <NavLink
+            to="#about"
+            onClick={() => {
+              scroll("about");
+            }}
+          >
+            <p title="About me"> About Me</p>
+          </NavLink>
         </p>
         <p
           onClick={() => setSelect(2)}
@@ -62,9 +78,14 @@ export default function Slidebar() {
           data-aos="slide-right"
           data-aos-delay="1000"
         >
-          <a href="#resume" title="Resume">
-            Resume
-          </a>
+          <NavLink
+            to="#resume"
+            onClick={() => {
+              scroll("resume");
+            }}
+          >
+            <p title="Resume"> Resume</p>
+          </NavLink>
         </p>
         <p
           onClick={() => setSelect(3)}
@@ -74,9 +95,14 @@ export default function Slidebar() {
           data-aos="slide-left"
           data-aos-delay="1400"
         >
-          <a href="#projects" title="Projects">
-            Projects
-          </a>
+          <NavLink
+            to="#projects"
+            onClick={() => {
+              scroll("projects");
+            }}
+          >
+            <p title="Projects"> Projects</p>
+          </NavLink>
         </p>
         <p
           onClick={() => setSelect(4)}
@@ -86,9 +112,14 @@ export default function Slidebar() {
           data-aos="slide-right"
           data-aos-delay="1800"
         >
-          <a href="#contact" title="Contact">
-            Contact
-          </a>
+          <NavLink
+            to="#contact"
+            onClick={() => {
+              scroll("contact");
+            }}
+          >
+            <p title="Contact"> Contact</p>
+          </NavLink>
         </p>
       </div>
       <div
