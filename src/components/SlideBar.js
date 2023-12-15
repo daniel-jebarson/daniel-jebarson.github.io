@@ -7,13 +7,22 @@ import { useState } from "react";
 
 export default function Slidebar() {
   const [select, setSelect] = useState(0);
+  const openNewTab = () => {
+    window.location.href = `${window.location.origin}/activity`;
+  };
   return (
     <div className="flex-none hidden lg:block  bg-black h-screen min-w-[25%] fixed ">
       <div className="nav flex  text-white text-lg mt-10 flex-col align-middle justify-center text-center w-full gap-5 overflow-hidden">
-        <div data-aos="slide-down">
+        <div
+          data-aos="slide-down"
+          onClick={() => {
+            openNewTab();
+          }}
+        >
           <img
             src={require("../assets/images/MyImage.webp")}
             alt="Daniel Jebarson"
+            title="Discord Activity"
             className="rounded-full border-solid cursor-pointer  border-[8px] border-stone-600 min-h-fit mx-auto  max-w-[190px]"
           />
           <h3 className="text-white name py-4 font-medium ">
@@ -28,7 +37,9 @@ export default function Slidebar() {
           data-aos="slide-right"
           data-aos-delay="200"
         >
-          <a href="/#">Home</a>
+          <a title="Home Page" href="/#">
+            Home
+          </a>
         </p>
         <p
           onClick={() => setSelect(1)}
@@ -38,7 +49,10 @@ export default function Slidebar() {
           data-aos-delay="600"
           data-aos="slide-left"
         >
-          <a href="#about"> About Me</a>
+          <a href="#about" title="About me">
+            {" "}
+            About Me
+          </a>
         </p>
         <p
           onClick={() => setSelect(2)}
@@ -48,7 +62,9 @@ export default function Slidebar() {
           data-aos="slide-right"
           data-aos-delay="1000"
         >
-          <a href="#resume">Resume</a>
+          <a href="#resume" title="Resume">
+            Resume
+          </a>
         </p>
         <p
           onClick={() => setSelect(3)}
@@ -58,7 +74,9 @@ export default function Slidebar() {
           data-aos="slide-left"
           data-aos-delay="1400"
         >
-          <a href="#projects">Projects</a>
+          <a href="#projects" title="Projects">
+            Projects
+          </a>
         </p>
         <p
           onClick={() => setSelect(4)}
@@ -68,7 +86,9 @@ export default function Slidebar() {
           data-aos="slide-right"
           data-aos-delay="1800"
         >
-          <a href="#contact">Contact</a>
+          <a href="#contact" title="Contact">
+            Contact
+          </a>
         </p>
       </div>
       <div
@@ -77,6 +97,7 @@ export default function Slidebar() {
         data-aos-delay="2300"
       >
         <div
+          title="Github"
           onClick={() =>
             window.open("https://github.com/daniel-jebarson", "_blank")
           }
@@ -84,6 +105,7 @@ export default function Slidebar() {
           <GitHubIcon className="cursor-pointer hover:scale-105" />
         </div>
         <div
+          title="Instagram"
           onClick={() =>
             window.open("https://www.instagram.com/daniel_diago2003", "_blank")
           }
@@ -92,6 +114,7 @@ export default function Slidebar() {
           <InstagramIcon className="cursor-pointer hover:scale-105" />
         </div>
         <div
+          title="Linkedin"
           onClick={() =>
             window.open(
               "https://www.linkedin.com/in/daniel-jebarson-k-a727a822a",
@@ -103,6 +126,7 @@ export default function Slidebar() {
           <LinkedInIcon className="cursor-pointer hover:scale-105" />
         </div>
         <div
+          title="Facebook"
           onClick={() =>
             window.open("https://www.facebook.com/daniel.jebarson.9", "_blank")
           }
