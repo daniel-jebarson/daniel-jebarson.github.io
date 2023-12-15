@@ -5,7 +5,7 @@ export default function CodeCard({ presenceData }) {
   );
   const time = useTimer(startTimeInSeconds);
   return (
-    <div className="flex mx-2 hover:scale-[1.007] transition-all duration-100  hover:cursor-pointer flex-row justify-center items-center  ">
+    <div className="flex mx-2  transition-all duration-100  flex-row justify-center items-center  ">
       <div className="relative">
         <img
           className="w-full h-full my-[6px] max-h-[80px] max-w-[80px] object-cover"

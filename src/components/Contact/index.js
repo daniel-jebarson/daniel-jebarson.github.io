@@ -79,7 +79,7 @@ export default function Contact() {
       </div>
       <div className="flex items-center justify-center flex-col md:flex-row ">
         <div className="flex-auto  md:w-32  sm:pl-0  overflow-visible">
-          <form onSubmit={handleSubmit} data-aos={"slide-up"}>
+          <form className="ml-2" onSubmit={handleSubmit} data-aos={"slide-up"}>
             <label class="block mb-2 text-2xl font-semibold mt-3  text-white ">
               Get in Touch
             </label>
@@ -124,6 +124,7 @@ export default function Contact() {
               class="block h-40 text-white mt-10 p-2.5 min-w-[215px] max-w-[365px] w-full text-sm rounded-lg border bg-gray-700 border-gray-600 focus:ring-blue-500 focus:border-blue-500 resize-none"
             ></textarea>
             <button
+              title="Send message"
               type="submit"
               className={`${
                 mailSent === false && loading === false ? "" : "hidden"
@@ -198,6 +199,7 @@ export default function Contact() {
             </div>
             <div className="text-white flex flex-row gap-7 w-fit mx-auto pt-4">
               <div
+                title="Github"
                 onClick={() =>
                   window.open("https://github.com/daniel-jebarson", "_blank")
                 }
@@ -205,6 +207,7 @@ export default function Contact() {
                 <GitHubIcon className="cursor-pointer hover:scale-105" />
               </div>
               <div
+                title="Instagram"
                 onClick={() =>
                   window.open(
                     "https://www.instagram.com/daniel_diago2003",
@@ -216,6 +219,7 @@ export default function Contact() {
                 <InstagramIcon className="cursor-pointer hover:scale-105" />
               </div>
               <div
+                title="Linkedin"
                 onClick={() =>
                   window.open(
                     "https://www.linkedin.com/in/daniel-jebarson-k-a727a822a",
@@ -227,6 +231,7 @@ export default function Contact() {
                 <LinkedInIcon className="cursor-pointer hover:scale-105" />
               </div>
               <div
+                title="Facebook"
                 onClick={() =>
                   window.open(
                     "https://www.facebook.com/daniel.jebarson.9",
