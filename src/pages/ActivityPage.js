@@ -4,6 +4,9 @@ import {
   DoNotDisturbOnSharp,
   FiberManualRecordSharp,
 } from "@mui/icons-material";
+// import LanguageIcon from "@mui/icons-material/Language";
+// import LaptopWindowsIcon from "@mui/icons-material/LaptopWindows";
+// import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -51,7 +54,9 @@ export default function ActivityPage() {
             {" "}
             <Loader />
           </div>
-          <p className="text-2xl font-bold">Loading...</p>
+          <p className="text-2xl font-bold">
+            {error ? "Error occured" : "Loading..."}
+          </p>
         </div>
       </div>
     );
@@ -70,19 +75,25 @@ export default function ActivityPage() {
                     className="rounded-full border-solid cursor-pointer  border-[6px]  border-neutral-800 shadow-md  min-h-fit mx-auto  max-w-[190px]"
                   />
                 </NavLink>
-
-                {userData.discord_status === "idle" ? (
-                  <DarkModeSharp className="bottom-2 bg-neutral-800 outline-neutral-800  left-3 ml-[55%] outline outline-4 w-28 h-28 rounded-full  absolute text-yellow-500 " />
-                ) : null}
-                {userData.discord_status === "dnd" ? (
-                  <DoNotDisturbOnSharp className="bottom-2 bg-neutral-800 outline-neutral-800  left-3 ml-[55%] outline outline-4 w-28 h-28 rounded-full  absolute text-red-500 " />
-                ) : null}
-                {userData.discord_status === "online" ? (
-                  <FiberManualRecordSharp className="bottom-2 bg-neutral-800 outline-neutral-800  left-3 ml-[55%] outline outline-4 w-28 h-28 rounded-full  absolute text-green-500 " />
-                ) : null}
-                {userData.discord_status === "offline" ? (
-                  <div className="bottom-2 bg-neutral-800 outline-neutral-800  left-3 ml-[55%] outline outline-4 w-5 h-5 rounded-full  absolute border-neutral-700 border-4 text-black " />
-                ) : null}
+                <span
+                  title={`Discord Status: ${
+                    userData.discord_status.charAt(0).toUpperCase() +
+                    userData.discord_status.slice(1)
+                  }`}
+                >
+                  {userData.discord_status === "idle" ? (
+                    <DarkModeSharp className="bottom-2 bg-neutral-800 outline-neutral-800  left-3 ml-[55%] outline outline-4 w-28 h-28 rounded-full  absolute text-yellow-500 " />
+                  ) : null}
+                  {userData.discord_status === "dnd" ? (
+                    <DoNotDisturbOnSharp className="bottom-2 bg-neutral-800 outline-neutral-800  left-3 ml-[55%] outline outline-4 w-28 h-28 rounded-full  absolute text-red-500 " />
+                  ) : null}
+                  {userData.discord_status === "online" ? (
+                    <FiberManualRecordSharp className="bottom-2 bg-neutral-800 outline-neutral-800  left-3 ml-[55%] outline outline-4 w-28 h-28 rounded-full  absolute text-green-500 " />
+                  ) : null}
+                  {userData.discord_status === "offline" ? (
+                    <div className="bottom-2 bg-neutral-800 outline-neutral-800  left-3 ml-[55%] outline outline-4 w-5 h-5 rounded-full  absolute border-neutral-700 border-4 text-black " />
+                  ) : null}
+                </span>
               </div>
               <div className="py-2">
                 <h3 className="font-bold text-2xl text-white mb-1">
