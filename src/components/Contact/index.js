@@ -10,7 +10,7 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import * as LottiePlayer from "@lottiefiles/lottie-player";
+import "@lottiefiles/lottie-player";
 import { useState } from "react";
 
 export default function Contact() {
