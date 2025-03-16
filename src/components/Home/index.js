@@ -39,7 +39,7 @@ export default function Home() {
             strings: [
               "✋I'm Daniel Jebarson",
               "I'm an enthusiast Full-Stack 🌐developer",
-              "I'm a 4th yr CSE 👨‍🎓 in VIT Vellore",
+              "I'm currently working on Generative AI 🤖",
               "You can 📲 me through discord or ✉️",
             ],
             delay: 150,

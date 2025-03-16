@@ -29,24 +29,24 @@ export default function About() {
             className="text-xl lg:text-3xl font-medium"
             data-aos={"fade-left"}
           >
-            I'm <span className="text-yellow-600">Daniel Jebarson,</span> a Web
-            Enthusiast
+            I'm <span className="text-yellow-600">Daniel Jebarson,</span> an AI
+            and Web Enthusiast
           </h3>
           <p
             className="pt-5 leading-7 text-slate-900 text-justify"
             data-aos={"fade-left"}
           >
-            I love playing music, reading comics and playing games. I am
-            currently pursuing BTech degree in VIT Vellore. I am {getDate()}{" "}
-            years old.I love exploring new technologies.
+            I love learning new technologies, playing music, reading comics and
+            playing games. I am currently working on zenoti in hyderabad. I am{" "}
+            {getDate()} years old.I love exploring new technologies.
           </p>
           <p
             className="text-justify leading-7 text-slate-900"
             data-aos={"fade-right"}
           >
-            I am currently looking for jobs. I am also a discord bot developer.
-            I worked on reactJs, NextJs, TypeScript, Java and many more. I am
-            also looking to collaborate in open-source projects.
+            I am open for job offers. I am also a discord bot developer. I
+            worked on GenAI, Python, reactJs, NextJs, TypeScript, Java and many
+            more. I am also looking to collaborate in open-source projects.
           </p>
         </div>
 

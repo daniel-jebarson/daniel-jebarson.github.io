@@ -161,13 +161,13 @@ export default function Resume() {
         <div className="flex flex-col text-center" data-aos="slide-up">
           <div className="text-3xl font-bold py-3">My Skills</div>
           <div className="ml-16 flex flex-col gap-8 mt-6">
-            <BarGraph name={"JavaScript"} percent={65} />
-            <BarGraph name={"React"} percent={75} />
+            <BarGraph name={"Generative AI"} percent={85} />
+            <BarGraph name={"JavaScript"} percent={80} />
+            <BarGraph name={"React"} percent={70} />
             <BarGraph name={"TypeScript"} percent={60} />
-            <BarGraph name={"Java"} percent={80} />
+            <BarGraph name={"Java"} percent={75} />
             <BarGraph name={"HTML/CSS"} percent={85} />
-            <BarGraph name={"SQL"} percent={65} />
-            <BarGraph name={"AWS"} percent={40} />
+            <BarGraph name={"AWS"} percent={80} />
           </div>
 
           <a
